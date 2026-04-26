@@ -26,7 +26,7 @@ export default function Hero() {
 
       <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 sm:pt-20">
         <div className="space-y-8">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-3">
             <img
               src="/images/nyt-20projekt-20-2816-29.png"
               alt="Nomi Logo"
