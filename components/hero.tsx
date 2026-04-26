@@ -58,7 +58,7 @@ export default function Hero() {
           <div className="flex justify-center pt-2">
             <Link
               href="/menu"
-              className="border-2 border-[#A91D3A] text-white text-lg rounded-lg font-semibold hover:bg-[#A91D3A]/10 transition-all duration-300 hover:scale-105"
+              className="px-10 py-4 border-2 border-[#A91D3A] text-white text-lg rounded-lg font-semibold hover:bg-[#A91D3A]/10 transition-all duration-300 hover:scale-105 w-full sm:w-auto"
             >
               Se Vores Menu
             </Link>
