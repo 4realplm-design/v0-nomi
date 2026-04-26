@@ -34,11 +34,8 @@ export default function Navigation() {
       { label: "All You Can Eat Menu", href: "/menu" },
       {
         label: "Takeaway",
-        href: "/takeaway",
-        nested: [
-          { label: "Takeaway Menu", href: "/takeaway", badge: "Kommer Snart" },
-          { label: "Online Bestilling", href: "/bestil-mad", badge: "Kommer Snart" },
-        ],
+        href: "https://takeaway.any2order.com/b/takeaway/NomiB.B.Q&Sushi",
+        external: true,
       },
     ],
   }
@@ -130,53 +127,20 @@ export default function Navigation() {
                         <div className="space-y-1">
                           {menuSection.items.map((item) => (
                             <div key={item.href}>
-                              {item.nested ? (
-                                <div>
-                                  <button
-                                    onClick={() => setExpandedTakeaway(!expandedTakeaway)}
-                                    className="w-full flex items-center justify-between pl-2 pr-2 py-2.5 text-sm font-bold text-white/95 hover:text-[#A91D3A] hover:bg-[#A91D3A]/10 rounded-lg transition-all duration-200"
-                                  >
-                                    <span>{item.label}</span>
-                                    <ChevronDown
-                                      className={`w-4 h-4 transition-transform duration-200 ${
-                                        expandedTakeaway ? "rotate-180" : ""
-                                      }`}
-                                    />
-                                  </button>
-                                  {expandedTakeaway && (
-                                    <div className="space-y-1 mt-1">
-                                      {item.nested.map((nestedItem) => (
-                                        <Link
-                                          key={nestedItem.href}
-                                          href={nestedItem.href}
-                                          className="flex items-center justify-between pl-6 pr-2 py-2.5 text-sm font-medium text-white/90 hover:text-[#A91D3A] hover:bg-[#A91D3A]/10 rounded-lg transition-all duration-200"
-                                          onClick={() => setShowDesktopMenu(false)}
-                                        >
-                                          <span className="leading-tight">{nestedItem.label}</span>
-                                          {nestedItem.badge && (
-                                            <span className="text-xs px-2 py-0.5 bg-[#A91D3A] text-white rounded-full font-semibold">
-                                              {nestedItem.badge}
-                                            </span>
-                                          )}
-                                        </Link>
-                                      ))}
-                                    </div>
-                                  )}
-                                </div>
-                              ) : (
-                                <Link
-                                  href={item.href}
-                                  className="flex items-center justify-between pl-2 pr-2 py-2.5 text-sm font-medium text-white/90 hover:text-[#A91D3A] hover:bg-[#A91D3A]/10 rounded-lg transition-all duration-200"
-                                  onClick={() => setShowDesktopMenu(false)}
-                                >
-                                  <span className="leading-tight">{item.label}</span>
-                                  {item.badge && (
-                                    <span className="text-xs px-2 py-0.5 bg-[#A91D3A] text-white rounded-full font-semibold">
-                                      {item.badge}
-                                    </span>
-                                  )}
-                                </Link>
-                              )}
+                              <Link
+                                href={item.href}
+                                target={item.external ? "_blank" : undefined}
+                                rel={item.external ? "noopener noreferrer" : undefined}
+                                className="flex items-center justify-between pl-2 pr-2 py-2.5 text-sm font-medium text-white/90 hover:text-[#A91D3A] hover:bg-[#A91D3A]/10 rounded-lg transition-all duration-200"
+                                onClick={() => setShowDesktopMenu(false)}
+                              >
+                                <span className="leading-tight">{item.label}</span>
+                                {item.badge && (
+                                  <span className="text-xs px-2 py-0.5 bg-[#A91D3A] text-white rounded-full font-semibold">
+                                    {item.badge}
+                                  </span>
+                                )}
+                              </Link>
                             </div>
                           ))}
                         </div>
@@ -301,53 +265,20 @@ export default function Navigation() {
                 <div className="space-y-1 px-2">
                   {menuSection.items.map((item) => (
                     <div key={item.href}>
-                      {item.nested ? (
-                        <div>
-                          <button
-                            onClick={() => setExpandedTakeawayMobile(!expandedTakeawayMobile)}
-                            className="w-full flex items-center justify-between pl-4 pr-4 py-2.5 text-sm font-bold text-white/95 hover:text-[#A91D3A] hover:bg-[#A91D3A]/10 rounded-lg transition-all duration-200"
-                          >
-                            <span>{item.label}</span>
-                            <ChevronDown
-                              className={`w-4 h-4 transition-transform duration-200 ${
-                                expandedTakeawayMobile ? "rotate-180" : ""
-                              }`}
-                            />
-                          </button>
-                          {expandedTakeawayMobile && (
-                            <div className="space-y-1 mt-1">
-                              {item.nested.map((nestedItem) => (
-                                <Link
-                                  key={nestedItem.href}
-                                  href={nestedItem.href}
-                                  className="flex items-center justify-between pl-8 pr-4 py-2.5 text-sm font-medium text-white/90 hover:text-[#A91D3A] rounded-lg hover:bg-[#A91D3A]/10 transition-all duration-200"
-                                  onClick={() => setIsOpen(false)}
-                                >
-                                  <span className="leading-tight">{nestedItem.label}</span>
-                                  {nestedItem.badge && (
-                                    <span className="text-xs px-2 py-0.5 bg-[#A91D3A] text-white rounded-full font-semibold">
-                                      {nestedItem.badge}
-                                    </span>
-                                  )}
-                                </Link>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      ) : (
-                        <Link
-                          href={item.href}
-                          className="flex items-center justify-between pl-4 pr-4 py-2.5 text-sm font-medium text-white/90 hover:text-[#A91D3A] rounded-lg transition-all duration-200"
-                          onClick={() => setIsOpen(false)}
-                        >
-                          <span className="leading-tight">{item.label}</span>
-                          {item.badge && (
-                            <span className="text-xs px-2 py-0.5 bg-[#A91D3A] text-white rounded-full font-semibold">
-                              {item.badge}
-                            </span>
-                          )}
-                        </Link>
-                      )}
+                      <Link
+                        href={item.href}
+                        target={item.external ? "_blank" : undefined}
+                        rel={item.external ? "noopener noreferrer" : undefined}
+                        className="flex items-center justify-between pl-4 pr-4 py-2.5 text-sm font-medium text-white/90 hover:text-[#A91D3A] rounded-lg transition-all duration-200"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        <span className="leading-tight">{item.label}</span>
+                        {item.badge && (
+                          <span className="text-xs px-2 py-0.5 bg-[#A91D3A] text-white rounded-full font-semibold">
+                            {item.badge}
+                          </span>
+                        )}
+                      </Link>
                     </div>
                   ))}
                 </div>
