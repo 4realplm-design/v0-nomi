@@ -46,21 +46,21 @@ export default function Hero() {
               Reserver Bord Nu
             </Link>
             <Link
-              href="/menu"
-              className="border-2 border-[#A91D3A] text-white text-lg rounded-lg font-semibold hover:bg-[#A91D3A]/10 transition-all duration-300 hover:scale-105 w-full sm:w-auto px-11 py-1"
+              href="https://takeaway.any2order.com/b/takeaway/NomiB.B.Q&Sushi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-4 bg-black/50 border-2 border-white/50 hover:border-[#A91D3A] text-white text-lg rounded-lg font-semibold transition-all duration-300 hover:bg-[#A91D3A]/20 hover:scale-105 w-full sm:w-auto"
             >
-              Se Vores Menu
+              Takeaway
             </Link>
           </div>
 
           <div className="flex justify-center pt-2">
             <Link
-              href="https://takeaway.any2order.com/b/takeaway/NomiB.B.Q&Sushi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-10 py-4 bg-black/50 border-2 border-white/50 hover:border-[#A91D3A] text-white text-lg rounded-lg font-semibold transition-all duration-300 hover:bg-[#A91D3A]/20 hover:scale-105"
+              href="/menu"
+              className="border-2 border-[#A91D3A] text-white text-lg rounded-lg font-semibold hover:bg-[#A91D3A]/10 transition-all duration-300 hover:scale-105"
             >
-              Takeaway
+              Se Vores Menu
             </Link>
           </div>
         </div>
