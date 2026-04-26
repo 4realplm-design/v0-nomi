@@ -30,7 +30,7 @@ export default function Hero() {
             <img
               src="/images/nyt-20projekt-20-2816-29.png"
               alt="Nomi Logo"
-              className="w-56 h-56 sm:w-64 sm:h-64 object-contain drop-shadow-2xl animate-scale-in"
+              className="w-64 h-64 sm:w-80 sm:h-80 object-contain drop-shadow-2xl animate-scale-in"
             />
           </div>
 
