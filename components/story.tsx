@@ -41,7 +41,7 @@ export default function Story() {
   }, [])
 
   return (
-    <section id="story-section" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
+    <section id="story-section" className="pt-48 pb-48 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
       <div className="max-w-7xl mx-auto">
         <div
           className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
@@ -170,7 +170,7 @@ export default function Story() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-[#A91D3A]/10 via-black to-black border-2 border-[#A91D3A]/30 rounded-3xl p-4 sm:p-8 md:p-12">
+          <div className="bg-gradient-to-br from-[#A91D3A]/10 via-black to-black border-2 border-[#A91D3A]/30 rounded-3xl pt-32 sm:p-8 md:p-12 pb-4 sm:pb-8 md:pb-12 px-4 sm:px-8 md:px-12">
             <div className="text-center mb-8 sm:mb-12">
               <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">
                 {"\nNOMI BBQ Guide"}

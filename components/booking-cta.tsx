@@ -27,12 +27,12 @@ export default function BookingCTA() {
       className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-card via-background to-card/50 relative overflow-hidden"
     >
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 right-20 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-20 w-96 h-96 bg-accent/5 rounded-xl blur-3xl" />
       </div>
 
       <div className="max-w-4xl mx-auto relative z-10 text-center">
         <div className={`space-y-6 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">{"De hyggligste minder sker rundt om maden"}</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-3">{"De hyggligste minder sker rundt om maden"}</h2>
           <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
             Reserver dit bord i dag 
           </p>
