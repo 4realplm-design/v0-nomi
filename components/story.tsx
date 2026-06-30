@@ -50,8 +50,8 @@ export default function Story() {
             All You Can Eat Koncept
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed px-4">
-            Nomi BBQ & Sushi byder på det bedste fra to verdener: Du kan grille din egen Koreanske BBQ ved bordet og
-            spise frisk sushi.
+            Nomi BBQ & Sushi byder på det bedste fra koreansk grillkultur. Du kan grille din egen Koreanske BBQ ved
+            bordet og nyde autentiske koreanske specialiteter.
           </p>
         </div>
 
@@ -106,7 +106,7 @@ export default function Story() {
               <p className="text-white/70 leading-relaxed text-sm sm:text-base">
                 Hos Nomi BBQ & Sushi tilbyder vi et All You Can Eat-koncept, der giver mulighed for at smage bredt og
                 dele en hyggelig spiseoplevelse med familie, venner og kolleger. Vi lægger stor vægt på kvalitet,
-                friskhed og autentiske smagsoplevelser — fra udvalgte kødudskæringer til elegant tilberedt sushi.
+                friskhed og autentiske smagsoplevelser — fra udvalgte kødudskæringer til koreanske specialretter.
               </p>
             </div>
 
@@ -118,13 +118,6 @@ export default function Story() {
                   <span>
                     <strong className="text-white">Korean BBQ ved bordet:</strong> Et udvalg af friske, marinerede og
                     klassiske kødtyper, som gæsterne selv tilbereder ved bordet.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#A91D3A] mr-2 sm:mr-3 mt-1">▸</span>
-                  <span>
-                    <strong className="text-white">Frisk sushi:</strong> Forberedt dagligt af vores sushikokke — nigiri,
-                    sashimi, maki og specialruller.
                   </span>
                 </li>
                 <li className="flex items-start">

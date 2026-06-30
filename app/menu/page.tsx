@@ -41,59 +41,6 @@ export default function MenuPage() {
   }
 
   const menuSections = {
-    sushi: {
-      title: "Sushi",
-      subtitle: "Traditionelle japanske specialiteter",
-      categories: {
-        sashimi: {
-          name: "Sashimi",
-          description: "Tynde skiver af rå fisk",
-          items: [
-            { number: "20", name: "Laks Sashimi", description: "3 skiver" },
-            { number: "21", name: "Tun Sashimi", description: "3 skiver" },
-          ],
-        },
-        toppet: {
-          name: "Toppet",
-          description: "Sushi med topping",
-          items: [
-            { number: "29", name: "Grillet Laks Deluxe Roll" },
-            { number: "30", name: "Laks Deluxe Roll" },
-            { number: "32", name: "Rainbow Roll" },
-          ],
-        },
-        uramaki: {
-          name: "Uramaki",
-          description: "Inside-out ruller",
-          items: [
-            { number: "38", name: "Alaska Roll" },
-            { number: "39", name: "California Roll" },
-            { number: "40", name: "Spicy Laks Roll" },
-          ],
-        },
-        hosomaki: {
-          name: "Hosomaki",
-          description: "Tynde ruller",
-          items: [
-            { number: "43", name: "Tigerrejer Hosomaki" },
-            { number: "44", name: "Tun Hosomaki" },
-            { number: "45", name: "Laks Hosomaki" },
-            { number: "46", name: "Agurk Hosomaki" },
-          ],
-        },
-        nigiri: {
-          name: "Nigiri",
-          description: "Håndformede sushi",
-          items: [
-            { number: "59", name: "Laks Nigiri" },
-            { number: "60", name: "Grillet Laks Nigiri" },
-            { number: "63", name: "Tun Nigiri" },
-            { number: "68", name: "Tigerrejer Nigiri" },
-            { number: "73", name: "Avocado Nigiri" },
-          ],
-        },
-      },
-    },
     koreanbbq: {
       title: "Korean BBQ",
       subtitle: "Grill det selv ved bordet",
@@ -290,6 +237,22 @@ export default function MenuPage() {
           </button>
 
           <p className="text-xs text-white/30 mt-4">Swipe eller træk højre på retter for at gemme dem</p>
+        </div>
+      </div>
+
+      {/* Sushi pause notice */}
+      <div className="px-4 pb-2">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-start gap-4 bg-[#A91D3A]/10 border border-[#A91D3A]/50 rounded-xl px-6 py-5">
+            <div className="shrink-0 w-1 self-stretch bg-[#A91D3A] rounded-full" />
+            <div>
+              <p className="text-white font-semibold text-base mb-1">Sushi er midlertidigt ikke tilgængeligt</p>
+              <p className="text-white/60 text-sm leading-relaxed">
+                Vi holder en pause fra sushi i 1 måned. Vi glæder os til at byde jer velkommen med sushi igen snart.
+                I mellemtiden nyder vi vores fulde Korean BBQ- og koreanske specialitetsmenu.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

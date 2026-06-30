@@ -77,7 +77,7 @@ export default function Footer() {
           {/* Mobile: Description under logo */}
           <div className="md:hidden mb-8">
             <p className="text-sm text-white/60">
-              Autentisk koreansk BBQ &amp; japansk sushi i hjertet af Brønderslev{" "}
+              Autentisk koreansk BBQ i hjertet af Brønderslev{" "}
             </p>
           </div>
 
@@ -124,7 +124,7 @@ export default function Footer() {
                 </div>
               </button>
               <p className="text-sm text-white/60">
-                Autentisk koreansk BBQ &amp; japansk sushi i hjertet af Brønderslev{" "}
+                Autentisk koreansk BBQ i hjertet af Brønderslev{" "}
               </p>
             </div>
 
