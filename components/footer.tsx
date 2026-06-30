@@ -189,36 +189,36 @@ export default function Footer() {
 
               <div className="mt-6">
                 <h3 className="text-base font-semibold text-white mb-1">
-                  RESTAURANT <span className="text-[#A91D3A]">BUSINESS HOURS</span>
+                  ÅBNINGSTIDER <span className="text-[#A91D3A]">JULI</span>
                 </h3>
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between text-white/80">
-                    <span>Søndag</span>
-                    <span>12:00 - 21:00</span>
-                  </div>
-                  <div className="flex justify-between text-white/80">
                     <span>Mandag</span>
-                    <span>12:00 - 21:00</span>
+                    <span>16:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between text-white/80">
                     <span>Tirsdag</span>
-                    <span>12:00 - 21:00</span>
+                    <span>16:00 - 21:00</span>
+                  </div>
+                  <div className="flex justify-between text-white/80">
+                    <span>Onsdag</span>
+                    <span>16:00 - 21:00</span>
+                  </div>
+                  <div className="flex justify-between text-white/80">
+                    <span>Torsdag</span>
+                    <span>16:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between text-white/80 pb-1 border-b border-[#A91D3A]">
-                    <span>Onsdag</span>
-                    <span>12:00 - 21:00</span>
+                    <span>Fredag</span>
+                    <span>16:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between text-white/80 pt-1">
-                    <span>Torsdag</span>
-                    <span>12:00 - 21:00</span>
-                  </div>
-                  <div className="flex justify-between text-white/80">
-                    <span>Fredag</span>
-                    <span>12:00 - 22:00</span>
-                  </div>
-                  <div className="flex justify-between text-white/80">
                     <span>Lørdag</span>
                     <span>12:00 - 22:00</span>
+                  </div>
+                  <div className="flex justify-between text-white/80">
+                    <span>Søndag</span>
+                    <span>16:00 - 21:00</span>
                   </div>
                 </div>
               </div>
@@ -353,36 +353,36 @@ export default function Footer() {
 
               <div className="mt-6">
                 <h3 className="text-base font-semibold text-white mb-1">
-                  RESTAURANT <span className="text-[#A91D3A]">BUSINESS HOURS</span>
+                  ÅBNINGSTIDER <span className="text-[#A91D3A]">JULI</span>
                 </h3>
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between text-white/80">
-                    <span>Søndag</span>
-                    <span>12:00 - 21:00</span>
-                  </div>
-                  <div className="flex justify-between text-white/80">
                     <span>Mandag</span>
-                    <span>12:00 - 21:00</span>
+                    <span>16:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between text-white/80">
                     <span>Tirsdag</span>
-                    <span>12:00 - 21:00</span>
+                    <span>16:00 - 21:00</span>
+                  </div>
+                  <div className="flex justify-between text-white/80">
+                    <span>Onsdag</span>
+                    <span>16:00 - 21:00</span>
+                  </div>
+                  <div className="flex justify-between text-white/80">
+                    <span>Torsdag</span>
+                    <span>16:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between text-white/80 pb-1 border-b border-[#A91D3A]">
-                    <span>Onsdag</span>
-                    <span>12:00 - 21:00</span>
+                    <span>Fredag</span>
+                    <span>16:00 - 21:00</span>
                   </div>
                   <div className="flex justify-between text-white/80 pt-1">
-                    <span>Torsdag</span>
-                    <span>12:00 - 21:00</span>
-                  </div>
-                  <div className="flex justify-between text-white/80">
-                    <span>Fredag</span>
-                    <span>12:00 - 22:00</span>
-                  </div>
-                  <div className="flex justify-between text-white/80">
                     <span>Lørdag</span>
                     <span>12:00 - 22:00</span>
+                  </div>
+                  <div className="flex justify-between text-white/80">
+                    <span>Søndag</span>
+                    <span>16:00 - 21:00</span>
                   </div>
                 </div>
               </div>

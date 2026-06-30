@@ -55,17 +55,35 @@ export default function ContactPage() {
 
           {/* Opening Hours */}
           <div className="border-t border-white/10 pt-16 mb-16 animate-fade-in-up stagger-2">
-            <h3 className="text-4xl font-bold mb-8 text-center text-white">Åbningstider</h3>
-            <div className="text-center space-y-4">
-              <div className="inline-block text-left">
-                <div className="flex items-center gap-8 text-2xl mb-3">
-                  <span className="text-white/80">Mandag - Søndag</span>
-                  <span className="font-bold text-white">12:00 - 21:30</span>
-                </div>
-                <div className="flex items-center gap-8 text-xl">
-                  <span className="text-white/70">All you can eat koncept</span>
-                  <span className="font-bold text-[#A91D3A]">12:00 - 21:30</span>
-                </div>
+            <h3 className="text-4xl font-bold mb-8 text-center text-white">Åbningstider <span className="text-[#A91D3A]">Juli</span></h3>
+            <div className="max-w-sm mx-auto space-y-2 text-lg">
+              <div className="flex justify-between">
+                <span className="text-white/70">Mandag</span>
+                <span className="font-semibold text-white">16:00 - 21:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-white/70">Tirsdag</span>
+                <span className="font-semibold text-white">16:00 - 21:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-white/70">Onsdag</span>
+                <span className="font-semibold text-white">16:00 - 21:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-white/70">Torsdag</span>
+                <span className="font-semibold text-white">16:00 - 21:00</span>
+              </div>
+              <div className="flex justify-between pb-2 border-b border-[#A91D3A]">
+                <span className="text-white/70">Fredag</span>
+                <span className="font-semibold text-white">16:00 - 21:00</span>
+              </div>
+              <div className="flex justify-between pt-2">
+                <span className="text-white/70">Lørdag</span>
+                <span className="font-semibold text-[#A91D3A]">12:00 - 22:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-white/70">Søndag</span>
+                <span className="font-semibold text-white">16:00 - 21:00</span>
               </div>
             </div>
           </div>
