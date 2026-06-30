@@ -146,6 +146,10 @@ export default function PolicyModal() {
                 </ul>
                 <div className="mt-4 ml-8 space-y-2 text-white/70">
                   <p>
+                    <strong className="text-white">Sushi:</strong> Hvis der efterlades mere end 3 stk., opkræves 10 kr.
+                    pr. stk.
+                  </p>
+                  <p>
                     <strong className="text-white">Kød:</strong> Hvis der efterlades mere end 2 tallerkener kød,
                     opkræves 10 kr. pr. portion.
                   </p>

@@ -21,9 +21,9 @@ export default function AboutPage() {
             <section className="border-l-4 border-[#A91D3A] pl-8 py-6">
               <h2 className="text-3xl font-bold mb-6">Vores All You Can Eat Koncept</h2>
               <p className="leading-relaxed mb-6 text-foreground">
-                Nomi BBQ & Sushi byder velkommen til en kulinarisk oplevelse med autentisk koreansk grillkultur.
-                Vores koncept er centreret om bordgrillet Korean BBQ og koreanske specialretter, serveret i et
-                moderne og indbydende miljø.
+                Nomi BBQ & Sushi byder velkommen til en kulinarisk oplevelse, hvor koreansk grillkultur møder japansk
+                sushi-håndværk. Vores koncept kombinerer bordgrillet Korean BBQ med frisklavet sushi, så gæsterne kan
+                nyde det bedste fra begge køkkener i et moderne og indbydende miljø.
               </p>
               <p className="leading-relaxed mb-6 text-foreground">
                 Vi tilbyder et All You Can Eat-koncept, der giver mulighed for at smage bredt og dele en hyggelig
@@ -108,6 +108,10 @@ export default function AboutPage() {
                 </li>
               </ul>
               <div className="mt-4 ml-8 space-y-2 text-white/70">
+                <p>
+                  <strong className="text-white">Sushi:</strong> Hvis der efterlades mere end 3 stk., opkræves 10 kr.
+                  pr. stk.
+                </p>
                 <p>
                   <strong className="text-white">Kød:</strong> Hvis der efterlades mere end 2 tallerkener kød, opkræves
                   10 kr. pr. portion.

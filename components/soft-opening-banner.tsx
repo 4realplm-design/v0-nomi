@@ -49,7 +49,7 @@ export default function SoftOpeningBanner() {
                   <span className="font-semibold">🍖 Koreansk BBQ ved bordet</span>
                 </div>
                 <div className="bg-white/10 rounded px-3 py-2 backdrop-blur-sm">
-                  <span className="font-semibold">🍽️ Koreanske specialretter</span>
+                  <span className="font-semibold">🍣 Sushi & varme retter</span>
                 </div>
                 <div className="bg-white/10 rounded px-3 py-2 backdrop-blur-sm">
                   <span className="font-semibold">🍽️ All You Can Eat-koncept</span>

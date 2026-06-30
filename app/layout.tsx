@@ -12,13 +12,13 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Nomi B.B.Q & Sushi | Koreansk BBQ i Brønderslev",
+  title: "Nomi B.B.Q & Sushi | Koreansk BBQ × Japansk Sushi i Brønderslev",
   description:
-    "Oplev autentisk koreansk BBQ på Peder Nielsens Plads 8B i Brønderslev. Bordgrill-oplevelse med friske råvarer. All You Can Eat fra 269,-. Book bord nu!",
+    "Oplev hvor koreansk BBQ mødes med japansk sushi på Peder Nielsens Plads 8B i Brønderslev. Autentisk bordgrill-oplevelse med friske råvarer. All You Can Eat fra 279,-. Book bord nu!",
   openGraph: {
-    title: "Nomi B.B.Q & Sushi | Koreansk BBQ i Brønderslev",
+    title: "Nomi B.B.Q & Sushi | Koreansk BBQ × Japansk Sushi i Brønderslev",
     description:
-      "Oplev autentisk koreansk BBQ på Peder Nielsens Plads 8B i Brønderslev. Bordgrill-oplevelse med friske råvarer. All You Can Eat fra 269,-. Book bord nu!",
+      "Oplev hvor koreansk BBQ mødes med japansk sushi på Peder Nielsens Plads 8B i Brønderslev. Autentisk bordgrill-oplevelse med friske råvarer. All You Can Eat fra 279,-. Book bord nu!",
     url: "https://www.nomirestaurant.dk",
     siteName: "Nomi B.B.Q & Sushi",
     images: [
@@ -34,18 +34,19 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nomi B.B.Q & Sushi | Koreansk BBQ i Brønderslev",
+    title: "Nomi B.B.Q & Sushi | Koreansk BBQ × Japansk Sushi i Brønderslev",
     description:
-      "Oplev autentisk koreansk BBQ på Peder Nielsens Plads 8B i Brønderslev. Bordgrill-oplevelse med friske råvarer.",
+      "Oplev hvor koreansk BBQ mødes med japansk sushi på Peder Nielsens Plads 8B i Brønderslev. Autentisk bordgrill-oplevelse med friske råvarer.",
     images: ["/images/nyt-20projekt-20-2816-29.png"],
   },
   keywords: [
     "koreansk restaurant Brønderslev",
+    "sushi Brønderslev",
     "BBQ restaurant",
+    "japansk mad",
     "bordgrill",
     "all you can eat",
     "Nomi restaurant",
-    "koreansk BBQ",
   ],
   icons: {
     icon: "/images/nomi-logo-circle.png",
