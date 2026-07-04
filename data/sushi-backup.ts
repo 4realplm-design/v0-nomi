@@ -93,19 +93,6 @@ export const sushiMenuSection = {
  * components/footer.tsx (tagline):
  *   "Autentisk koreansk BBQ & japansk sushi i hjertet af Brønderslev"
  *
- * components/footer.tsx (logo alt):
- *   "Nomi Korean BBQ & Sushi"
- *
- * components/footer.tsx (copyright):
- *   "Nomi B.B.Q & Sushi"
- *
- * app/bestil-mad/page.tsx (metadata):
- *   title: "Bestil Mad | NOMI B.B.Q & Sushi"
- *
- * app/booking/page.tsx (metadata):
- *   title: "Book Bord | NOMI Koreansk BBQ & Sushi"
- *   description: "Book dit bord hos Nomi Koreansk BBQ & Sushi i Brønderslev"
- *
  * app/layout.tsx (metadata):
  *   title: "Nomi B.B.Q & Sushi | Koreansk BBQ × Japansk Sushi i Brønderslev"
  *   description: "Oplev hvor koreansk BBQ mødes med japansk sushi på Peder Nielsens Plads 8B
