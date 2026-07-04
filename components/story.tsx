@@ -73,9 +73,9 @@ export default function Story() {
                 <p className="text-white font-semibold text-sm sm:text-base">All you can eat børn 3-5 år</p>
                 <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">79,-</p>
               </div>
-              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
+              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10" style={{paddingRight: "0px", paddingTop: "12px", paddingLeft: "15px"}}>
                 <p className="text-white font-semibold text-sm sm:text-base">All you can eat børn 6-10</p>
-                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">139,-</p>
+                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">109,-</p>
               </div>
             </div>
           </div>
