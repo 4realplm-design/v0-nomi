@@ -227,13 +227,13 @@ export default function MenuPage() {
 
           <div className="mt-8 bg-gradient-to-br from-[#A91D3A]/25 via-black to-black border-2 border-[#A91D3A] rounded-2xl p-6 sm:p-8 text-left">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 text-balance">
-              🔥 SOMMERKAMPAGNE HOS NOMI BBQ 🔥
+              SOMMERKAMPAGNE HOS NOMI BBQ
             </h2>
             <p className="text-lg text-white/80 mb-4">
               Fra 5. juli – 9. august kører vi en skøn sommerkampagne!
             </p>
             <p className="text-xl font-semibold text-white mb-2">
-              🥩 All You Can Eat Koreansk BBQ & Sticks
+              All You Can Eat Koreansk BBQ & Sticks
             </p>
             <p className="text-3xl sm:text-4xl font-bold text-[#A91D3A] mb-3">
               Kun 239 kr. <span className="text-base font-normal text-white/60">pr. person</span>
@@ -242,7 +242,7 @@ export default function MenuPage() {
               <li className="flex items-start gap-2">
                 <span className="text-[#A91D3A] mt-0.5">▸</span>
                 <span>
-                  Samme pris alle ugens dage — <strong className="text-white">nyd maden i weekenden helt uden ekstra gebyr</strong>
+                  Samme pris alle ugens dage — <span className="text-[#ba2348] font-normal">nyd maden i weekenden helt uden ekstra gebyr</span>
                 </span>
               </li>
               <li className="flex items-start gap-2">
