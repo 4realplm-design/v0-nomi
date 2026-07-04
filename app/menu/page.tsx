@@ -9,7 +9,7 @@ export default function MenuPage() {
   const [favorites, setFavorites] = useState<string[]>([])
   const [swipedItems, setSwipedItems] = useState<Set<string>>(new Set())
   const [showFavorites, setShowFavorites] = useState(false)
-  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set(["nigiri"]))
+  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set(["bbq"]))
 
   useEffect(() => {
     const saved = localStorage.getItem("nomi-favorites")
@@ -41,59 +41,6 @@ export default function MenuPage() {
   }
 
   const menuSections = {
-    sushi: {
-      title: "Sushi",
-      subtitle: "Traditionelle japanske specialiteter",
-      categories: {
-        sashimi: {
-          name: "Sashimi",
-          description: "Tynde skiver af rå fisk",
-          items: [
-            { number: "20", name: "Laks Sashimi", description: "3 skiver" },
-            { number: "21", name: "Tun Sashimi", description: "3 skiver" },
-          ],
-        },
-        toppet: {
-          name: "Toppet",
-          description: "Sushi med topping",
-          items: [
-            { number: "29", name: "Grillet Laks Deluxe Roll" },
-            { number: "30", name: "Laks Deluxe Roll" },
-            { number: "32", name: "Rainbow Roll" },
-          ],
-        },
-        uramaki: {
-          name: "Uramaki",
-          description: "Inside-out ruller",
-          items: [
-            { number: "38", name: "Alaska Roll" },
-            { number: "39", name: "California Roll" },
-            { number: "40", name: "Spicy Laks Roll" },
-          ],
-        },
-        hosomaki: {
-          name: "Hosomaki",
-          description: "Tynde ruller",
-          items: [
-            { number: "43", name: "Tigerrejer Hosomaki" },
-            { number: "44", name: "Tun Hosomaki" },
-            { number: "45", name: "Laks Hosomaki" },
-            { number: "46", name: "Agurk Hosomaki" },
-          ],
-        },
-        nigiri: {
-          name: "Nigiri",
-          description: "Håndformede sushi",
-          items: [
-            { number: "59", name: "Laks Nigiri" },
-            { number: "60", name: "Grillet Laks Nigiri" },
-            { number: "63", name: "Tun Nigiri" },
-            { number: "68", name: "Tigerrejer Nigiri" },
-            { number: "73", name: "Avocado Nigiri" },
-          ],
-        },
-      },
-    },
     koreanbbq: {
       title: "Korean BBQ",
       subtitle: "Grill det selv ved bordet",
@@ -277,6 +224,32 @@ export default function MenuPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-3">All You Can Eat Menu</h1>
           <p className="text-lg text-white/60 mb-2">Ubegrænset adgang til alle retter</p>
           <p className="text-sm text-white/40">Max 2 timer per reservation</p>
+
+          <div className="mt-8 bg-gradient-to-br from-[#A91D3A]/25 via-black to-black border-2 border-[#A91D3A] rounded-2xl p-6 sm:p-8 text-left">
+            <p className="text-[#A91D3A] font-bold text-sm uppercase tracking-widest mb-2">Sommerkampagne</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 text-balance">
+              All You Can Eat Koreansk BBQ &amp; Sticks
+            </h2>
+            <p className="text-3xl sm:text-4xl font-bold text-[#A91D3A] mb-3">
+              239,- <span className="text-base font-normal text-white/60">pr. person</span>
+            </p>
+            <ul className="space-y-1.5 text-white/70 text-sm sm:text-base">
+              <li className="flex items-start gap-2">
+                <span className="text-[#A91D3A] mt-0.5">▸</span>
+                <span>Gælder fra 5. juli til 9. august</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#A91D3A] mt-0.5">▸</span>
+                <span>
+                  Samme pris alle ugens dage — <strong className="text-white">intet weekendtillæg</strong>
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#A91D3A] mt-0.5">▸</span>
+                <span>Vi serverer ikke sushi i denne periode</span>
+              </li>
+            </ul>
+          </div>
 
           <button
             onClick={() => setShowFavorites(!showFavorites)}
