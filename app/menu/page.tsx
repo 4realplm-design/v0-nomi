@@ -226,32 +226,27 @@ export default function MenuPage() {
           <p className="text-sm text-white/40">Max 2 timer per reservation</p>
 
           <div className="mt-8 bg-gradient-to-br from-[#A91D3A]/25 via-black to-black border-2 border-[#A91D3A] rounded-2xl p-6 sm:p-8 text-left">
+            <p className="text-[#A91D3A] font-bold text-sm uppercase tracking-widest mb-2">Sommerkampagne</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 text-balance">
-              🔥 SOMMERKAMPAGNE HOS NOMI BBQ 🔥
+              All You Can Eat Koreansk BBQ &amp; Sticks
             </h2>
-            <p className="text-lg text-white/80 mb-4">
-              Fra 5. juli – 9. august kører vi en skøn sommerkampagne!
-            </p>
-            <p className="text-xl font-semibold text-white mb-2">
-              🥩 All You Can Eat Koreansk BBQ & Sticks
-            </p>
             <p className="text-3xl sm:text-4xl font-bold text-[#A91D3A] mb-3">
-              Kun 239 kr. <span className="text-base font-normal text-white/60">pr. person</span>
+              239,- <span className="text-base font-normal text-white/60">pr. person</span>
             </p>
             <ul className="space-y-1.5 text-white/70 text-sm sm:text-base">
               <li className="flex items-start gap-2">
                 <span className="text-[#A91D3A] mt-0.5">▸</span>
+                <span>Gælder fra 5. juli til 9. august</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#A91D3A] mt-0.5">▸</span>
                 <span>
-                  Samme pris alle ugens dage — <strong className="text-white">nyd maden i weekenden helt uden ekstra gebyr</strong>
+                  Samme pris alle ugens dage — <strong className="text-white">intet weekendtillæg</strong>
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-[#A91D3A] mt-0.5">🍣</span>
+                <span className="text-[#A91D3A] mt-0.5">▸</span>
                 <span>Vi serverer ikke sushi i denne periode</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-[#A91D3A] mt-0.5">📅</span>
-                <span>Book dit bord allerede i dag – vi glæder os til at byde jer velkommen!</span>
               </li>
             </ul>
           </div>

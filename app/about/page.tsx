@@ -10,7 +10,7 @@ export default function AboutPage() {
       <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">Om Nomi BBQ</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-4">Om Nomi BBQ & Sushi</h1>
             <p className="text-lg text-white/60 max-w-2xl mx-auto">
               Vores regler og politikker for at sikre den bedste oplevelse for alle gæster
             </p>
@@ -21,9 +21,9 @@ export default function AboutPage() {
             <section className="border-l-4 border-[#A91D3A] pl-8 py-6">
               <h2 className="text-3xl font-bold mb-6">Vores All You Can Eat Koncept</h2>
               <p className="leading-relaxed mb-6 text-foreground">
-                Nomi BBQ byder velkommen til en kulinarisk oplevelse med fokus på koreansk grillkultur. Vores koncept
-                kombinerer bordgrillet Korean BBQ med et væld af tilbehør og sticks, så gæsterne kan nyde de bedste
-                smagsoplevelser i et moderne og indbydende miljø.
+                Nomi BBQ & Sushi byder velkommen til en kulinarisk oplevelse, hvor koreansk grillkultur møder japansk
+                sushi-håndværk. Vores koncept kombinerer bordgrillet Korean BBQ med frisklavet sushi, så gæsterne kan
+                nyde det bedste fra begge køkkener i et moderne og indbydende miljø.
               </p>
               <p className="leading-relaxed mb-6 text-foreground">
                 Vi tilbyder et All You Can Eat-koncept, der giver mulighed for at smage bredt og dele en hyggelig
@@ -109,6 +109,10 @@ export default function AboutPage() {
               </ul>
               <div className="mt-4 ml-8 space-y-2 text-white/70">
                 <p>
+                  <strong className="text-white">Sushi:</strong> Hvis der efterlades mere end 3 stk., opkræves 10 kr.
+                  pr. stk.
+                </p>
+                <p>
                   <strong className="text-white">Kød:</strong> Hvis der efterlades mere end 2 tallerkener kød, opkræves
                   10 kr. pr. portion.
                 </p>
@@ -123,7 +127,7 @@ export default function AboutPage() {
             <section className="border-l-4 border-[#A91D3A] pl-8 py-6">
               <h2 className="text-3xl font-bold mb-6">Regler for Højstole og Børn Under 3 År</h2>
               <p className="leading-relaxed mb-6 text-foreground">
-                For at sikre et behageligt og ordentligt spisemiljø for alle gæster, har Nomi BBQ fastlagt
+                For at sikre et behageligt og ordentligt spisemiljø for alle gæster, har Nomi BBQ & Sushi fastlagt
                 følgende retningslinjer for børn under 3 år:
               </p>
 

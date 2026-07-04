@@ -146,6 +146,10 @@ export default function PolicyModal() {
                 </ul>
                 <div className="mt-4 ml-8 space-y-2 text-white/70">
                   <p>
+                    <strong className="text-white">Sushi:</strong> Hvis der efterlades mere end 3 stk., opkræves 10 kr.
+                    pr. stk.
+                  </p>
+                  <p>
                     <strong className="text-white">Kød:</strong> Hvis der efterlades mere end 2 tallerkener kød,
                     opkræves 10 kr. pr. portion.
                   </p>
@@ -160,7 +164,7 @@ export default function PolicyModal() {
               <section className="border-l-4 border-[#A91D3A] pl-6">
                 <h3 className="text-2xl font-bold mb-4 text-white">Regler for Højstole og Børn Under 3 År</h3>
                 <p className="leading-relaxed mb-4 text-white/80">
-                  For at sikre et behageligt og ordentligt spisemiljø for alle gæster, har Nomi BBQ fastlagt
+                  For at sikre et behageligt og ordentligt spisemiljø for alle gæster, har Nomi BBQ & Sushi fastlagt
                   følgende retningslinjer for børn under 3 år:
                 </p>
 
@@ -197,10 +201,10 @@ export default function PolicyModal() {
           {activeTab === "privacy" && (
             <div className="space-y-8 text-white/80">
               <div className="border-l-4 border-[#A91D3A] pl-6">
-                <h3 className="text-2xl font-bold mb-4 text-white">Privatlivspolitik for Nomi B.B.Q ApS</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white">Privatlivspolitik for Nomi B.B.Q & Sushi ApS</h3>
                 <div className="space-y-2 text-sm">
                   <p>
-                    <strong className="text-white">Nomi B.B.Q ApS</strong>
+                    <strong className="text-white">Nomi B.B.Q & Sushi ApS</strong>
                   </p>
                   <p>CVR-nr.: 45528375</p>
                   <p>Adresse: Peder Nielsens Plads 8B, 9700 Brønderslev</p>
