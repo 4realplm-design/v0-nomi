@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Story() {
   const [isVisible, setIsVisible] = useState(false)
@@ -50,8 +51,7 @@ export default function Story() {
             All You Can Eat Koncept
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed px-4">
-            Nomi BBQ & Sushi byder på det bedste fra to verdener: Du kan grille din egen Koreanske BBQ ved bordet og
-            spise frisk sushi.
+            Nomi BBQ byder på en unik oplevelse, hvor du kan grille din egen Koreanske BBQ direkte ved bordet.
           </p>
         </div>
 
@@ -59,25 +59,38 @@ export default function Story() {
           className={`mb-12 sm:mb-16 max-w-3xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         >
           <div className="bg-gradient-to-br from-[#A91D3A]/20 to-transparent border border-[#A91D3A] rounded-2xl p-4 sm:p-8">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-center text-white">Priser</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
-                <p className="text-white font-semibold text-sm sm:text-base">All you can eat voksen</p>
-                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">269,-</p>
-                <p className="text-white/60 text-xs mt-1">mandag-torsdag</p>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-center text-white">Sommerkampagne</h3>
+            <p className="text-white/70 text-center mb-6">5. juli – 9. august</p>
+
+            <div className="space-y-4">
+              <div className="bg-black/40 rounded-xl p-6 border border-[#A91D3A]/50 text-center">
+                <p className="text-white font-semibold text-lg mb-1">All You Can Eat Koreansk BBQ & Sticks</p>
+                <div className="flex items-baseline justify-center gap-2">
+                  <p className="text-4xl text-[#A91D3A] font-bold">239,-</p>
+                  <p className="text-white/60">pr. person</p>
+                </div>
+                <p className="text-white/80 text-sm mt-3 font-medium">Samme pris alle ugens dage — nyd maden i weekenden helt uden ekstra gebyr</p>
+                <p className="text-[#A91D3A] text-xs mt-2 font-bold uppercase tracking-wider">Vi serverer ikke sushi i denne periode</p>
               </div>
-              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-[#A91D3A]/50">
-                <p className="text-white font-semibold text-sm sm:text-base">All you can eat fredag-søndag</p>
-                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">289,-</p>
-                <p className="text-white/60 text-xs mt-1">(også helligedage)</p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="bg-black/40 rounded-lg p-4 border border-white/10 text-center">
+                  <p className="text-white font-semibold mb-1">Børn 3–5 år</p>
+                  <p className="text-2xl text-[#A91D3A] font-bold">79,-</p>
+                </div>
+                <div className="bg-black/40 rounded-lg p-4 border border-white/10 text-center">
+                  <p className="text-white font-semibold mb-1">Børn 6–10 år</p>
+                  <p className="text-2xl text-[#A91D3A] font-bold">109,-</p>
+                </div>
               </div>
-              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
-                <p className="text-white font-semibold text-sm sm:text-base">All you can eat børn 3-5 år</p>
-                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">79,-</p>
-              </div>
-              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
-                <p className="text-white font-semibold text-sm sm:text-base">All you can eat børn 6-10</p>
-                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">139,-</p>
+
+              <div className="text-center pt-4">
+                <Link
+                  href="/booking"
+                  className="inline-block px-8 py-3 bg-[#A91D3A] hover:bg-[#8B1730] text-white rounded-lg font-semibold transition-all duration-300"
+                >
+                  Book dit bord i dag
+                </Link>
               </div>
             </div>
           </div>
@@ -87,6 +100,7 @@ export default function Story() {
           <div
             className={`transition-all duration-1000 delay-400 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
           >
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 text-white text-center md:text-left">Autentisk Korean Bibimbap</h3>
             <div className="relative aspect-square rounded-2xl overflow-hidden group">
               <Image
                 src="/images/bimbap.png"
@@ -104,9 +118,7 @@ export default function Story() {
             <div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-white">Vores Koncept</h3>
               <p className="text-white/70 leading-relaxed text-sm sm:text-base">
-                Hos Nomi BBQ & Sushi tilbyder vi et All You Can Eat-koncept, der giver mulighed for at smage bredt og
-                dele en hyggelig spiseoplevelse med familie, venner og kolleger. Vi lægger stor vægt på kvalitet,
-                friskhed og autentiske smagsoplevelser — fra udvalgte kødudskæringer til elegant tilberedt sushi.
+                Hos Nomi BBQ tilbyder vi et All You Can Eat-koncept, der giver mulighed for at smage bredt og dele en hyggelig spiseoplevelse med familie, venner og kolleger. Vi lægger stor vægt på kvalitet, friskhed og autentiske smagsoplevelser — fra vores udvalgte kødudskæringer til vores mange lækre sticks.
               </p>
             </div>
 
@@ -123,22 +135,13 @@ export default function Story() {
                 <li className="flex items-start">
                   <span className="text-[#A91D3A] mr-2 sm:mr-3 mt-1">▸</span>
                   <span>
-                    <strong className="text-white">Frisk sushi:</strong> Forberedt dagligt af vores sushikokke — nigiri,
-                    sashimi, maki og specialruller.
+                    <strong className="text-white">Tilbehør og småretter:</strong> Populære koreanske og japanske retter, som fuldender måltidet.
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#A91D3A] mr-2 sm:mr-3 mt-1">▸</span>
                   <span>
-                    <strong className="text-white">Tilbehør og småretter:</strong> Populære koreanske og japanske
-                    retter, som fuldender måltidet.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#A91D3A] mr-2 sm:mr-3 mt-1">▸</span>
-                  <span>
-                    <strong className="text-white">Digital bestilling:</strong> Alle bestillinger foretages via vores
-                    QR-menu. Gæster kan bestille ubegrænset og så ofte, de ønsker.
+                    <strong className="text-white">Digital bestilling:</strong> Alle bestillinger foretages via vores QR-menu. Gæster kan bestille ubegrænset og så ofte, de ønsker.
                   </span>
                 </li>
               </ul>
@@ -149,6 +152,9 @@ export default function Story() {
         <div
           className={`transition-all duration-1000 delay-800 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         >
+          <div className="text-center mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-white">Nomi BBQ Bordgrill</h3>
+          </div>
           <div ref={bordgrillRef} className="mb-8 sm:mb-12 relative aspect-video rounded-2xl overflow-hidden">
             <Image
               src="/images/nomi-bbq-grill-hq.png"

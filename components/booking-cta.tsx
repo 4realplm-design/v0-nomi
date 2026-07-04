@@ -40,13 +40,13 @@ export default function BookingCTA() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
             <Link
               href="/booking"
-              className="px-10 py-4 text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-all duration-300 hover:shadow-lg hover:shadow-accent/40 w-full sm:w-auto bg-destructive"
+              className="px-10 py-4 bg-[#A91D3A] hover:bg-[#8B1730] text-white rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[#A91D3A]/40 w-full sm:w-auto"
             >
               Reserver Bord Nu
             </Link>
             <Link
               href="#kontakt"
-              className="px-10 py-4 border border-accent/30 text-foreground rounded-lg font-semibold hover:bg-accent/5 transition-all duration-300 w-full sm:w-auto"
+              className="px-10 py-4 border border-[#A91D3A]/30 text-foreground rounded-lg font-semibold hover:bg-[#A91D3A]/5 transition-all duration-300 w-full sm:w-auto"
             >
               Kontakt Os
             </Link>
