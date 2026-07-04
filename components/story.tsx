@@ -69,50 +69,38 @@ export default function Story() {
             <div className="absolute -top-24 -right-24 w-72 h-72 bg-[#A91D3A]/10 rounded-full blur-3xl pointer-events-none" />
             <div className="relative z-10 p-6 sm:p-10">
               {/* Headline */}
-              <h3 className="text-2xl sm:text-3xl font-bold text-white text-balance leading-tight mb-2">
-                All You Can Eat Koreansk BBQ &amp; Sticks
-              </h3>
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 text-balance">
+                SOMMERKAMPAGNE HOS NOMI BBQ
+              </h2>
+              <p className="text-white/60 text-sm mb-6">Fra 5. juli – 9. august kører vi en skøn sommerkampagne!</p>
+
+              {/* Offer title */}
+              <p className="text-xl font-semibold text-white mb-2">All You Can Eat Koreansk BBQ &amp; Sticks</p>
 
               {/* Price */}
-              <div className="flex items-baseline gap-3 mt-5 mb-6">
-                <span className="text-5xl sm:text-6xl font-bold text-[#A91D3A]">239,-</span>
-                <span className="text-white/50 text-base">pr. person</span>
-              </div>
+              <p className="text-3xl sm:text-4xl font-bold text-[#A91D3A] mb-3">
+                Kun 239 kr. <span className="text-base font-normal text-white/60">pr. person</span>
+              </p>
 
               {/* Details */}
-              <ul className="space-y-2 mb-8">
-                <li className="flex items-start gap-3 text-white/70 text-sm sm:text-base">
-                  <span className="w-1 h-1 rounded-full bg-[#A91D3A] shrink-0 mt-2" />
+              <ul className="space-y-1.5 text-white/70 mb-8">
+                <li className="flex items-start gap-2 text-sm sm:text-base">
+                  <span className="text-[#A91D3A] mt-0.5">▸</span>
                   <span>
                     Samme pris alle ugens dage &mdash;{" "}
-                    <strong className="text-white font-semibold">nyd maden i weekenden helt uden ekstra gebyr</strong>
+                    <span className="text-[#b82a4d] font-normal">nyd maden i weekenden helt uden ekstra gebyr!</span>
                   </span>
                 </li>
-                <li className="flex items-start gap-3 text-white/70 text-sm sm:text-base">
-                  <span className="w-1 h-1 rounded-full bg-[#A91D3A] shrink-0 mt-2" />
-                  <span>Vi serverer ikke sushi i denne periode</span>
+                <li className="flex items-start gap-2 text-sm sm:text-base">
+                  <span className="text-[#A91D3A] mt-0.5">▸</span>
+                  <span>OBS: Vi serverer ikke sushi i denne periode</span>
+                </li>
+                <li className="flex items-start gap-0 text-sm sm:text-base">
+                  <span className="text-[#A91D3A] mt-0.5"></span>
+                  <span>Book dit bord allerede i dag – vi glæder os til at byde jer velkommen!</span>
                 </li>
               </ul>
 
-              {/* Children pricing */}
-              <div className="grid grid-cols-2 gap-3 mb-8 border-t border-white/10 pt-6">
-                <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
-                  <p className="text-white/70 text-xs sm:text-sm">Børn 3–5 år</p>
-                  <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold mt-0.5">79,-</p>
-                </div>
-                <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
-                  <p className="text-white/70 text-xs sm:text-sm">Børn 6–10 år</p>
-                  <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold mt-0.5">109,-</p>
-                </div>
-              </div>
-
-              {/* CTA */}
-              <a
-                href="/booking"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-[#A91D3A] hover:bg-[#8B1730] text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-xl hover:shadow-[#A91D3A]/30 hover:scale-105 text-sm sm:text-base"
-              >
-                Book dit bord i dag
-              </a>
             </div>
           </div>
         </div>
