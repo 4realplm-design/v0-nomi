@@ -6,7 +6,10 @@ import { useRouter } from "next/navigation"
 import { db } from "@/lib/firebase"
 import { ref, get } from "firebase/database"
 import Navigation from "@/components/navigation"
-import { Sparkles, Calendar, Copy, Check } from "lucide-react"
+import Footer from "@/components/footer"
+import MemberBadge from "@/components/member-badge"
+import MiniGame from "@/components/mini-game"
+import { Sparkles, Calendar, Copy, Check, Ticket, Gift, Star } from "lucide-react"
 
 export default function Dashboard() {
   const { user, loading } = useAuth()
@@ -105,40 +108,79 @@ export default function Dashboard() {
             </p>
           </div>
 
-          {/* Customer Info Card */}
-          <div className="bg-gradient-to-br from-[#A91D3A]/20 to-[#8B1730]/20 border border-[#A91D3A]/30 rounded-xl p-8 space-y-6 animate-fade-in-up">
-            <div className="flex items-center gap-3 mb-4">
-              <Sparkles className="w-6 h-6 text-[#A91D3A]" />
-              <h2 className="text-2xl font-bold">Dit Kunde-ID</h2>
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            {/* Member Card */}
+            <div className="space-y-6 animate-fade-in-up">
+              <div className="flex items-center gap-3">
+                <Star className="w-6 h-6 text-[#A91D3A]" />
+                <h2 className="text-2xl font-bold">Dit Digitale Medlemskort</h2>
+              </div>
+              <MemberBadge user={user} memberData={memberData} />
             </div>
 
-            <div className="space-y-4">
-              <div className="flex items-center justify-between p-4 bg-black/40 rounded-lg border border-white/10">
-                <div>
-                  <p className="text-sm text-white/60 mb-1">Unikt Kunde-ID</p>
-                  <p className="text-lg font-mono font-semibold text-[#A91D3A]">{user.uid}</p>
+            {/* Stats and Game */}
+            <div className="space-y-8 animate-fade-in-up">
+              <div className="bg-gradient-to-br from-[#A91D3A]/20 to-[#8B1730]/20 border border-[#A91D3A]/30 rounded-xl p-8 space-y-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Sparkles className="w-6 h-6 text-[#A91D3A]" />
+                  <h2 className="text-2xl font-bold">Medlems Info</h2>
                 </div>
-                <button
-                  onClick={copyToClipboard}
-                  className="p-3 hover:bg-white/10 rounded-lg transition-colors"
-                  title="Kopiér ID"
-                >
-                  {copied ? <Check className="w-5 h-5 text-green-500" /> : <Copy className="w-5 h-5 text-white/60" />}
-                </button>
+
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between p-4 bg-black/40 rounded-lg border border-white/10">
+                    <div>
+                      <p className="text-sm text-white/60 mb-1">Unikt Kunde-ID</p>
+                      <p className="text-lg font-mono font-semibold text-[#A91D3A]">{user.uid.substring(0, 16)}...</p>
+                    </div>
+                    <button
+                      onClick={copyToClipboard}
+                      className="p-3 hover:bg-white/10 rounded-lg transition-colors"
+                      title="Kopiér ID"
+                    >
+                      {copied ? <Check className="w-5 h-5 text-green-500" /> : <Copy className="w-5 h-5 text-white/60" />}
+                    </button>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="p-4 bg-black/40 rounded-lg border border-white/10">
+                      <p className="text-sm text-white/60 mb-1">Total Bookinger</p>
+                      <p className="text-3xl font-bold text-[#A91D3A]">{memberData?.bookingsCount || 0}</p>
+                    </div>
+                    <div className="p-4 bg-black/40 rounded-lg border border-white/10">
+                      <p className="text-sm text-white/60 mb-1">Medlem Siden</p>
+                      <p className="text-lg font-semibold truncate">
+                        {memberData?.createdAt ? new Date(memberData.createdAt).toLocaleDateString("da-DK") : "I dag"}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="p-4 bg-black/40 rounded-lg border border-white/10">
-                  <p className="text-sm text-white/60 mb-1">Total Bookinger</p>
-                  <p className="text-3xl font-bold text-[#A91D3A]">{memberData?.bookingsCount || 0}</p>
+              <MiniGame />
+            </div>
+          </div>
+
+          {/* Offers Section */}
+          <div className="bg-white/5 border border-white/10 rounded-xl p-8 animate-fade-in-up overflow-hidden relative">
+            <div className="absolute top-0 right-0 p-8 opacity-5">
+              <Gift className="w-32 h-32 text-white" />
+            </div>
+
+            <div className="flex items-center gap-3 mb-8">
+              <Ticket className="w-6 h-6 text-[#A91D3A]" />
+              <h2 className="text-2xl font-bold">Eksklusive Medlemstilbud</h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {[1, 2, 3].map((i) => (
+                <div key={i} className="group relative aspect-[4/3] rounded-xl border-2 border-dashed border-white/10 flex flex-col items-center justify-center p-6 text-center hover:border-[#A91D3A]/30 transition-all duration-500">
+                  <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Gift className="w-8 h-8 text-white/20" />
+                  </div>
+                  <h3 className="text-white/40 font-bold uppercase tracking-widest text-sm">Kommer Snart</h3>
+                  <p className="text-xs text-white/20 mt-2">Hold øje med nye tilbud direkte i din kundeklub</p>
                 </div>
-                <div className="p-4 bg-black/40 rounded-lg border border-white/10">
-                  <p className="text-sm text-white/60 mb-1">Medlem Siden</p>
-                  <p className="text-lg font-semibold">
-                    {memberData?.createdAt ? new Date(memberData.createdAt).toLocaleDateString("da-DK") : "I dag"}
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -202,6 +244,7 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+      <Footer />
     </main>
   )
 }
