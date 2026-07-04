@@ -56,38 +56,57 @@ export default function Story() {
         </div>
 
         <div
-          className={`mb-12 sm:mb-16 max-w-3xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+          className={`mb-12 sm:mb-24 max-w-4xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         >
-          <div className="bg-gradient-to-br from-[#A91D3A]/20 to-transparent border border-[#A91D3A] rounded-2xl p-4 sm:p-8">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-center text-white">Sommerkampagne</h3>
-            <p className="text-white/70 text-center mb-6">5. juli – 9. august</p>
+          <div className="flex justify-center mb-6 sm:mb-8">
+            <div className="inline-block border border-[#A91D3A]/60 rounded-full px-6 py-2">
+              <p className="text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#A91D3A] uppercase">
+                Sommerkampagne — 5. juli – 9. august
+              </p>
+            </div>
+          </div>
 
-            <div className="space-y-4">
-              <div className="bg-black/40 rounded-xl p-6 border border-[#A91D3A]/50 text-center">
-                <p className="text-white font-semibold text-lg mb-1">All You Can Eat Koreansk BBQ & Sticks</p>
-                <div className="flex items-baseline justify-center gap-2">
-                  <p className="text-4xl text-[#A91D3A] font-bold">239,-</p>
-                  <p className="text-white/60">pr. person</p>
-                </div>
-                <p className="text-white/80 text-sm mt-3 font-medium">Samme pris alle ugens dage — nyd maden i weekenden helt uden ekstra gebyr</p>
-                <p className="text-[#A91D3A] text-xs mt-2 font-bold uppercase tracking-wider">Vi serverer ikke sushi i denne periode</p>
+          <div className="bg-[#050505] border border-[#A91D3A]/20 rounded-3xl p-6 sm:p-12 md:p-16 shadow-2xl shadow-[#A91D3A]/5">
+            <div className="max-w-3xl">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-white tracking-tight">
+                All You Can Eat Koreansk BBQ & Sticks
+              </h3>
+
+              <div className="flex items-baseline gap-4 mb-10">
+                <p className="text-6xl sm:text-7xl md:text-8xl text-[#A91D3A] font-bold tracking-tighter">239,-</p>
+                <p className="text-white/40 text-lg sm:text-xl md:text-2xl">pr. person</p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="bg-black/40 rounded-lg p-4 border border-white/10 text-center">
-                  <p className="text-white font-semibold mb-1">Børn 3–5 år</p>
-                  <p className="text-2xl text-[#A91D3A] font-bold">79,-</p>
+              <ul className="space-y-4 mb-12">
+                <li className="flex items-start gap-3 text-white/90 text-sm sm:text-base md:text-lg">
+                  <span className="text-[#A91D3A] text-2xl leading-none">•</span>
+                  <span>
+                    Samme pris alle ugens dage — <strong className="text-white font-bold">nyd maden i weekenden helt uden ekstra gebyr</strong>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-white/90 text-sm sm:text-base md:text-lg">
+                  <span className="text-[#A91D3A] text-2xl leading-none">•</span>
+                  <span>Vi serverer ikke sushi i denne periode</span>
+                </li>
+              </ul>
+
+              <div className="h-px bg-white/10 w-full mb-12" />
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+                <div className="bg-black/40 rounded-2xl p-6 sm:p-8 border border-white/5">
+                  <p className="text-white/60 font-medium mb-3 text-sm sm:text-base">Børn 3–5 år</p>
+                  <p className="text-4xl sm:text-5xl text-[#A91D3A] font-bold">79,-</p>
                 </div>
-                <div className="bg-black/40 rounded-lg p-4 border border-white/10 text-center">
-                  <p className="text-white font-semibold mb-1">Børn 6–10 år</p>
-                  <p className="text-2xl text-[#A91D3A] font-bold">109,-</p>
+                <div className="bg-black/40 rounded-2xl p-6 sm:p-8 border border-white/5">
+                  <p className="text-white/60 font-medium mb-3 text-sm sm:text-base">Børn 6–10 år</p>
+                  <p className="text-4xl sm:text-5xl text-[#A91D3A] font-bold">109,-</p>
                 </div>
               </div>
 
-              <div className="text-center pt-4">
+              <div>
                 <Link
                   href="/booking"
-                  className="inline-block px-8 py-3 bg-[#A91D3A] hover:bg-[#8B1730] text-white rounded-lg font-semibold transition-all duration-300"
+                  className="inline-block px-10 py-4 bg-[#A91D3A] hover:bg-[#C82446] text-white rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105"
                 >
                   Book dit bord i dag
                 </Link>

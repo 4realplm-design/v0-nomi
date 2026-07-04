@@ -78,7 +78,7 @@ export default function Navigation() {
                 >
                   <Image
                     src="/images/nomi.png"
-                      alt="Nomi BBQ"
+                    alt="Nomi BBQ & Sushi"
                     width={280}
                     height={70}
                     className="h-16 w-auto object-contain"

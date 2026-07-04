@@ -12,21 +12,21 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Nomi Korean BBQ | Autentisk Koreansk BBQ i Brønderslev",
+  title: "Nomi BBQ & Sushi | Autentisk Koreansk BBQ & Sushi i Brønderslev",
   description:
-    "Oplev autentisk koreansk BBQ på Peder Nielsens Plads 8B i Brønderslev. Unik bordgrill-oplevelse med friske råvarer. Sommerkampagne: All You Can Eat for kun 239,-. Book bord nu!",
+    "Oplev autentisk koreansk BBQ og sushi på Peder Nielsens Plads 8B i Brønderslev. Unik bordgrill-oplevelse med friske råvarer. Sommerkampagne: All You Can Eat for kun 239,-. Book bord nu!",
   openGraph: {
-    title: "Nomi Korean BBQ | Autentisk Koreansk BBQ i Brønderslev",
+    title: "Nomi BBQ & Sushi | Autentisk Koreansk BBQ & Sushi i Brønderslev",
     description:
-      "Oplev autentisk koreansk BBQ på Peder Nielsens Plads 8B i Brønderslev. Unik bordgrill-oplevelse med friske råvarer. Sommerkampagne: All You Can Eat for kun 239,-. Book bord nu!",
+      "Oplev autentisk koreansk BBQ og sushi på Peder Nielsens Plads 8B i Brønderslev. Unik bordgrill-oplevelse med friske råvarer. Sommerkampagne: All You Can Eat for kun 239,-. Book bord nu!",
     url: "https://www.nomirestaurant.dk",
-    siteName: "Nomi Korean BBQ",
+    siteName: "Nomi BBQ & Sushi",
     images: [
       {
         url: "/images/nyt-20projekt-20-2816-29.png",
         width: 1200,
         height: 1200,
-        alt: "Nomi Korean BBQ - Restaurant i Brønderslev",
+        alt: "Nomi BBQ & Sushi - Restaurant i Brønderslev",
       },
     ],
     locale: "da_DK",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nomi Korean BBQ | Autentisk Koreansk BBQ i Brønderslev",
+    title: "Nomi BBQ & Sushi | Autentisk Koreansk BBQ & Sushi i Brønderslev",
     description:
-      "Oplev autentisk koreansk BBQ på Peder Nielsens Plads 8B i Brønderslev. Unik bordgrill-oplevelse med friske råvarer.",
+      "Oplev autentisk koreansk BBQ og sushi på Peder Nielsens Plads 8B i Brønderslev. Unik bordgrill-oplevelse med friske råvarer.",
     images: ["/images/nyt-20projekt-20-2816-29.png"],
   },
   keywords: [

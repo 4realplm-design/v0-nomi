@@ -32,7 +32,7 @@ export default function Footer() {
                   <div className="w-32" style={{ backfaceVisibility: "hidden" }}>
                     <Image
                       src="/images/nomi-logo-full.png"
-                      alt="Nomi Korean BBQ"
+                      alt="Nomi BBQ & Sushi"
                       width={300}
                       height={120}
                       className={`w-full h-auto ${!isFlipped && isFlipped === false ? "logo-shine-back" : ""}`}
@@ -77,7 +77,7 @@ export default function Footer() {
           {/* Mobile: Description under logo */}
           <div className="md:hidden mb-8">
             <p className="text-sm text-white/60">
-              Autentisk koreansk BBQ i hjertet af Brønderslev{" "}
+              Autentisk koreansk BBQ & Sushi i hjertet af Brønderslev{" "}
             </p>
           </div>
 
@@ -101,7 +101,7 @@ export default function Footer() {
                   <div className="w-32" style={{ backfaceVisibility: "hidden" }}>
                     <Image
                       src="/images/nomi-logo-full.png"
-                      alt="Nomi Korean BBQ"
+                      alt="Nomi BBQ & Sushi"
                       width={300}
                       height={120}
                       className={`w-full h-auto ${!isFlipped && isFlipped === false ? "logo-shine-back" : ""}`}
@@ -124,7 +124,7 @@ export default function Footer() {
                 </div>
               </button>
               <p className="text-sm text-white/60">
-                Autentisk koreansk BBQ i hjertet af Brønderslev{" "}
+                Autentisk koreansk BBQ & Sushi i hjertet af Brønderslev{" "}
               </p>
             </div>
 
