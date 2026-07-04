@@ -5,7 +5,6 @@ import SummerCampaign from "@/components/summer-campaign"
 import Story from "@/components/story"
 import MenuPreview from "@/components/menu-preview"
 import BookingCTA from "@/components/booking-cta"
-import SocialFeed from "@/components/social-feed"
 import Footer from "@/components/footer"
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <Story />
       <MenuPreview />
       <BookingCTA />
-      <SocialFeed />
       <Footer />
     </main>
   )
