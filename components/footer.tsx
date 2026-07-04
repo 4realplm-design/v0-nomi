@@ -32,7 +32,7 @@ export default function Footer() {
                   <div className="w-32" style={{ backfaceVisibility: "hidden" }}>
                     <Image
                       src="/images/nomi-logo-full.png"
-                      alt="Nomi Korean BBQ & Sushi"
+                      alt="Nomi Korean BBQ"
                       width={300}
                       height={120}
                       className={`w-full h-auto ${!isFlipped && isFlipped === false ? "logo-shine-back" : ""}`}
@@ -77,7 +77,7 @@ export default function Footer() {
           {/* Mobile: Description under logo */}
           <div className="md:hidden mb-8">
             <p className="text-sm text-white/60">
-              Autentisk koreansk BBQ &amp; japansk sushi i hjertet af Brønderslev{" "}
+              Autentisk koreansk BBQ i hjertet af Brønderslev{" "}
             </p>
           </div>
 
@@ -101,7 +101,7 @@ export default function Footer() {
                   <div className="w-32" style={{ backfaceVisibility: "hidden" }}>
                     <Image
                       src="/images/nomi-logo-full.png"
-                      alt="Nomi Korean BBQ & Sushi"
+                      alt="Nomi Korean BBQ"
                       width={300}
                       height={120}
                       className={`w-full h-auto ${!isFlipped && isFlipped === false ? "logo-shine-back" : ""}`}
@@ -124,7 +124,7 @@ export default function Footer() {
                 </div>
               </button>
               <p className="text-sm text-white/60">
-                Autentisk koreansk BBQ &amp; japansk sushi i hjertet af Brønderslev{" "}
+                Autentisk koreansk BBQ i hjertet af Brønderslev{" "}
               </p>
             </div>
 
@@ -442,7 +442,7 @@ export default function Footer() {
         <div className="border-t border-white/10 my-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
-          <p>&copy; {currentYear} Nomi B.B.Q & Sushi. Alle rettigheder forbeholdt.</p>
+          <p>&copy; {currentYear} Nomi B.B.Q. Alle rettigheder forbeholdt.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <button
               onClick={() => {

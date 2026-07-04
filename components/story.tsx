@@ -50,8 +50,7 @@ export default function Story() {
             All You Can Eat Koncept
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed px-4">
-            Nomi BBQ & Sushi byder på det bedste fra to verdener: Du kan grille din egen Koreanske BBQ ved bordet og
-            spise frisk sushi.
+            Nomi BBQ byder på en unik oplevelse, hvor du kan grille din egen Koreanske BBQ direkte ved bordet.
           </p>
         </div>
 
@@ -59,17 +58,16 @@ export default function Story() {
           className={`mb-12 sm:mb-16 max-w-3xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         >
           <div className="bg-gradient-to-br from-[#A91D3A]/20 to-transparent border border-[#A91D3A] rounded-2xl p-4 sm:p-8">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-center text-white">Priser</h3>
+            <div className="text-center mb-6">
+              <p className="text-[#A91D3A] font-bold text-sm uppercase tracking-widest mb-1">Sommerkampagne</p>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Priser</h3>
+              <p className="text-white/60 text-sm mt-2">Gælder fra 5. juli – 9. august</p>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
-                <p className="text-white font-semibold text-sm sm:text-base">All you can eat voksen</p>
-                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">269,-</p>
-                <p className="text-white/60 text-xs mt-1">mandag-torsdag</p>
-              </div>
-              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-[#A91D3A]/50">
-                <p className="text-white font-semibold text-sm sm:text-base">All you can eat fredag-søndag</p>
-                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">289,-</p>
-                <p className="text-white/60 text-xs mt-1">(også helligedage)</p>
+              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-[#A91D3A] col-span-1 sm:col-span-2">
+                <p className="text-white font-semibold text-sm sm:text-base text-center">All you can eat voksen</p>
+                <p className="text-3xl sm:text-4xl text-[#A91D3A] font-bold text-center mt-1">239,-</p>
+                <p className="text-white/80 text-center font-medium mt-2">🔥 Intet weekendtillæg 🔥</p>
               </div>
               <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
                 <p className="text-white font-semibold text-sm sm:text-base">All you can eat børn 3-5 år</p>
@@ -104,9 +102,9 @@ export default function Story() {
             <div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-white">Vores Koncept</h3>
               <p className="text-white/70 leading-relaxed text-sm sm:text-base">
-                Hos Nomi BBQ & Sushi tilbyder vi et All You Can Eat-koncept, der giver mulighed for at smage bredt og
+                Hos Nomi BBQ tilbyder vi et All You Can Eat-koncept, der giver mulighed for at smage bredt og
                 dele en hyggelig spiseoplevelse med familie, venner og kolleger. Vi lægger stor vægt på kvalitet,
-                friskhed og autentiske smagsoplevelser — fra udvalgte kødudskæringer til elegant tilberedt sushi.
+                friskhed og autentiske smagsoplevelser — fra vores udvalgte kødudskæringer til vores mange lækre sticks.
               </p>
             </div>
 
@@ -118,13 +116,6 @@ export default function Story() {
                   <span>
                     <strong className="text-white">Korean BBQ ved bordet:</strong> Et udvalg af friske, marinerede og
                     klassiske kødtyper, som gæsterne selv tilbereder ved bordet.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#A91D3A] mr-2 sm:mr-3 mt-1">▸</span>
-                  <span>
-                    <strong className="text-white">Frisk sushi:</strong> Forberedt dagligt af vores sushikokke — nigiri,
-                    sashimi, maki og specialruller.
                   </span>
                 </li>
                 <li className="flex items-start">
