@@ -27,28 +27,23 @@ export default function SoftOpeningBanner() {
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-2">
               <span className="text-2xl">🔥</span>
-              <h3 className="text-xl font-bold">SOMMERKAMPAGNE HOS NOMI BBQ</h3>
+              <h3 className="text-xl font-bold">SOFT OPENING — VI ER NU ÅBNE!</h3>
             </div>
 
             <div className="space-y-3 text-sm md:text-base">
               <p className="font-medium">
-                Fra 5. juli – 9. august kører vi en skøn sommerkampagne!
+                Vi er spændte på at byde jer velkommen til Nomi BBQ & Sushi i Brønderslev!
               </p>
 
-              <div className="bg-white/10 rounded-lg p-3 backdrop-blur-sm">
-                <p className="font-bold text-lg">💰 Kun 239 kr. pr. person</p>
-              </div>
-
-              <p className="text-white/90">
-                Nyd All You Can Eat Koreansk BBQ & Sticks til en helt særlig sommerpris.
-              </p>
-
-              <div className="grid md:grid-cols-2 gap-2 my-3">
+              <div className="grid md:grid-cols-3 gap-2 my-3">
                 <div className="bg-white/10 rounded px-3 py-2 backdrop-blur-sm">
-                  <span className="font-semibold">🥩 All You Can Eat BBQ & Sticks</span>
+                  <span className="font-semibold">🥩 Korean BBQ ved bordet</span>
                 </div>
                 <div className="bg-white/10 rounded px-3 py-2 backdrop-blur-sm">
-                  <span className="font-semibold">✨ Intet weekendtillæg</span>
+                  <span className="font-semibold">🍣 Sushi & varme retter</span>
+                </div>
+                <div className="bg-white/10 rounded px-3 py-2 backdrop-blur-sm">
+                  <span className="font-semibold">🍽️ All You Can Eat fra 279,-</span>
                 </div>
               </div>
 
