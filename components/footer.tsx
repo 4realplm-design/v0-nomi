@@ -5,6 +5,7 @@ import { useState } from "react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const currentMonth = new Date().toLocaleString("da-DK", { month: "long" }).toUpperCase()
   const [isFlipped, setIsFlipped] = useState(false)
 
   const handleLogoClick = () => {
@@ -189,7 +190,7 @@ export default function Footer() {
 
               <div className="mt-6">
                 <h3 className="text-base font-semibold text-white mb-1">
-                  ÅBNINGSTIDER <span className="text-[#A91D3A]">JULI</span>
+                  ÅBNINGSTIDER <span className="text-[#A91D3A]">{currentMonth}</span>
                 </h3>
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between text-white/80">
@@ -353,7 +354,7 @@ export default function Footer() {
 
               <div className="mt-6">
                 <h3 className="text-base font-semibold text-white mb-1">
-                  ÅBNINGSTIDER <span className="text-[#A91D3A]">JULI</span>
+                  ÅBNINGSTIDER <span className="text-[#A91D3A]">{currentMonth}</span>
                 </h3>
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between text-white/80">
