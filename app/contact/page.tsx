@@ -5,9 +5,6 @@ import Footer from "@/components/footer"
 import Link from "next/link"
 
 export default function ContactPage() {
-  const currentMonth = new Date().toLocaleString("da-DK", { month: "long" })
-  const currentMonthCapitalized = currentMonth.charAt(0).toUpperCase() + currentMonth.slice(1)
-
   return (
     <main className="bg-black text-white">
       <Navigation />
@@ -58,7 +55,7 @@ export default function ContactPage() {
 
           {/* Opening Hours */}
           <div className="border-t border-white/10 pt-16 mb-16 animate-fade-in-up stagger-2">
-            <h3 className="text-4xl font-bold mb-8 text-center text-white">Åbningstider <span className="text-[#A91D3A]">{currentMonthCapitalized}</span></h3>
+            <h3 className="text-4xl font-bold mb-8 text-center text-white">Åbningstider <span className="text-[#A91D3A]">Juli</span></h3>
             <div className="max-w-sm mx-auto space-y-2 text-lg">
               <div className="flex justify-between">
                 <span className="text-white/70">Mandag</span>

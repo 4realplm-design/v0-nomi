@@ -57,25 +57,62 @@ export default function Story() {
         <div
           className={`mb-12 sm:mb-16 max-w-3xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         >
-          <div className="bg-gradient-to-br from-[#A91D3A]/10 via-black to-black border-2 border-[#A91D3A]/30 rounded-3xl p-4 sm:p-8 md:p-12">
-            <div className="text-center mb-6">
-              <p className="text-[#A91D3A] font-bold text-sm uppercase tracking-widest mb-1">All You Can Eat</p>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Priser</h3>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-[#A91D3A] col-span-1 sm:col-span-2">
-                <p className="text-white font-semibold text-sm sm:text-base text-center">All you can eat voksen</p>
-                <p className="text-3xl sm:text-4xl text-[#A91D3A] font-bold text-center mt-1">279,-</p>
-                <p className="text-white/60 text-center text-sm mt-1">Weekend: 299,-</p>
+          {/* Eyebrow */}
+          <div className="flex justify-center mb-6">
+            <span className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-[#A91D3A] border border-[#A91D3A]/40 rounded-full px-4 py-1.5">
+              Sommerkampagne &mdash; 5. juli &ndash; 9. august
+            </span>
+          </div>
+
+          {/* Card */}
+          <div className="relative overflow-hidden rounded-2xl border border-[#A91D3A]/30 bg-gradient-to-br from-[#A91D3A]/10 via-black to-black">
+            <div className="absolute -top-24 -right-24 w-72 h-72 bg-[#A91D3A]/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="relative z-10 p-6 sm:p-10">
+              {/* Headline */}
+              <h3 className="text-2xl sm:text-3xl font-bold text-white text-balance leading-tight mb-2">
+                All You Can Eat Koreansk BBQ &amp; Sticks
+              </h3>
+
+              {/* Price */}
+              <div className="flex items-baseline gap-3 mt-5 mb-6">
+                <span className="text-5xl sm:text-6xl font-bold text-[#A91D3A]">239,-</span>
+                <span className="text-white/50 text-base">pr. person</span>
               </div>
-              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
-                <p className="text-white font-semibold text-sm sm:text-base">All you can eat børn 3-5 år</p>
-                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">99,-</p>
+
+              {/* Details */}
+              <ul className="space-y-2 mb-8">
+                <li className="flex items-start gap-3 text-white/70 text-sm sm:text-base">
+                  <span className="w-1 h-1 rounded-full bg-[#A91D3A] shrink-0 mt-2" />
+                  <span>
+                    Samme pris alle ugens dage &mdash;{" "}
+                    <strong className="text-white font-semibold">nyd maden i weekenden helt uden ekstra gebyr</strong>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-white/70 text-sm sm:text-base">
+                  <span className="w-1 h-1 rounded-full bg-[#A91D3A] shrink-0 mt-2" />
+                  <span>Vi serverer ikke sushi i denne periode</span>
+                </li>
+              </ul>
+
+              {/* Children pricing */}
+              <div className="grid grid-cols-2 gap-3 mb-8 border-t border-white/10 pt-6">
+                <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
+                  <p className="text-white/70 text-xs sm:text-sm">Børn 3–5 år</p>
+                  <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold mt-0.5">79,-</p>
+                </div>
+                <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
+                  <p className="text-white/70 text-xs sm:text-sm">Børn 6–10 år</p>
+                  <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold mt-0.5">109,-</p>
+                </div>
               </div>
-              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
-                <p className="text-white font-semibold text-sm sm:text-base">All you can eat børn 6-10</p>
-                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">139,-</p>
-              </div>
+
+              {/* CTA */}
+              <a
+                href="/booking"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-[#A91D3A] hover:bg-[#8B1730] text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-xl hover:shadow-[#A91D3A]/30 hover:scale-105 text-sm sm:text-base"
+              >
+                Book dit bord i dag
+              </a>
             </div>
           </div>
         </div>
