@@ -50,7 +50,7 @@ export default function Story() {
             All You Can Eat Koncept
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed px-4">
-            Nomi BBQ byder på en unik oplevelse, hvor du kan grille din egen Koreanske BBQ direkte ved bordet.
+            Nomi BBQ &amp; Sushi byder på en unik oplevelse, hvor du kan grille din egen Koreanske BBQ ved bordet og nyde frisk japansk sushi.
           </p>
         </div>
 
@@ -101,9 +101,9 @@ export default function Story() {
             <div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-white">Vores Koncept</h3>
               <p className="text-white/70 leading-relaxed text-sm sm:text-base">
-                Hos Nomi BBQ tilbyder vi et All You Can Eat-koncept, der giver mulighed for at smage bredt og
+                Hos Nomi BBQ &amp; Sushi tilbyder vi et All You Can Eat-koncept, der giver mulighed for at smage bredt og
                 dele en hyggelig spiseoplevelse med familie, venner og kolleger. Vi lægger stor vægt på kvalitet,
-                friskhed og autentiske smagsoplevelser — fra vores udvalgte kødudskæringer til vores mange lækre sticks.
+                friskhed og autentiske smagsoplevelser — fra udvalgte kødudskæringer og lækre sticks til frisk japansk sushi.
               </p>
             </div>
 
@@ -115,6 +115,13 @@ export default function Story() {
                   <span>
                     <strong className="text-white">Korean BBQ ved bordet:</strong> Et udvalg af friske, marinerede og
                     klassiske kødtyper, som gæsterne selv tilbereder ved bordet.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#A91D3A] mr-2 sm:mr-3 mt-1">▸</span>
+                  <span>
+                    <strong className="text-white">Frisk sushi:</strong> Tilberedt dagligt af vores kokke — nigiri,
+                    sashimi, maki og specialruller.
                   </span>
                 </li>
                 <li className="flex items-start">
