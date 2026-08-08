@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     description:
       "Oplev autentisk koreansk BBQ og japansk sushi på Peder Nielsens Plads 8B i Brønderslev. All You Can Eat fra 279,-. Book bord nu!",
     url: "https://www.nomirestaurant.dk",
-    siteName: "Nomi B.B.Q",
+    siteName: "Nomi BBQ & Sushi",
     images: [
       {
         url: "/images/nyt-20projekt-20-2816-29.png",
         width: 1200,
         height: 1200,
-        alt: "Nomi B.B.Q - Koreansk Restaurant i Brønderslev",
+        alt: "Nomi BBQ & Sushi - Restaurant i Brønderslev",
       },
     ],
     locale: "da_DK",

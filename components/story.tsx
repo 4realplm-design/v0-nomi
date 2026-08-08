@@ -55,7 +55,7 @@ export default function Story() {
         </div>
 
         <div
-          className={`mb-12 sm:mb-16 max-w-3xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+          className={`mb-12 sm:mb-24 max-w-4xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         >
           <div className="bg-gradient-to-br from-[#A91D3A]/10 via-black to-black border-2 border-[#A91D3A]/30 rounded-3xl p-4 sm:p-8 md:p-12">
             <div className="text-center mb-6">
@@ -84,6 +84,7 @@ export default function Story() {
           <div
             className={`transition-all duration-1000 delay-400 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
           >
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 text-white text-center md:text-left">Autentisk Korean Bibimbap</h3>
             <div className="relative aspect-square rounded-2xl overflow-hidden group">
               <Image
                 src="/images/bimbap.png"
@@ -134,8 +135,7 @@ export default function Story() {
                 <li className="flex items-start">
                   <span className="text-[#A91D3A] mr-2 sm:mr-3 mt-1">▸</span>
                   <span>
-                    <strong className="text-white">Digital bestilling:</strong> Alle bestillinger foretages via vores
-                    QR-menu. Gæster kan bestille ubegrænset og så ofte, de ønsker.
+                    <strong className="text-white">Digital bestilling:</strong> Alle bestillinger foretages via vores QR-menu. Gæster kan bestille ubegrænset og så ofte, de ønsker.
                   </span>
                 </li>
               </ul>
@@ -146,6 +146,9 @@ export default function Story() {
         <div
           className={`transition-all duration-1000 delay-800 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         >
+          <div className="text-center mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-white">Nomi BBQ Bordgrill</h3>
+          </div>
           <div ref={bordgrillRef} className="mb-8 sm:mb-12 relative aspect-video rounded-2xl overflow-hidden">
             <Image
               src="/images/nomi-bbq-grill-hq.png"
