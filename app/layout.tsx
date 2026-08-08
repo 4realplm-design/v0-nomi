@@ -12,13 +12,13 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Nomi BBQ & Sushi | Autentisk Koreansk BBQ & Sushi i Brønderslev",
+  title: "Nomi BBQ & Sushi | Koreansk BBQ & Japansk Sushi i Brønderslev",
   description:
-    "Oplev autentisk koreansk BBQ og sushi på Peder Nielsens Plads 8B i Brønderslev. Unik bordgrill-oplevelse med friske råvarer. Sommerkampagne: All You Can Eat for kun 239,-. Book bord nu!",
+    "Oplev autentisk koreansk BBQ og japansk sushi på Peder Nielsens Plads 8B i Brønderslev. All You Can Eat fra 279,-. Book bord nu!",
   openGraph: {
-    title: "Nomi BBQ & Sushi | Autentisk Koreansk BBQ & Sushi i Brønderslev",
+    title: "Nomi BBQ & Sushi | Koreansk BBQ & Japansk Sushi i Brønderslev",
     description:
-      "Oplev autentisk koreansk BBQ og sushi på Peder Nielsens Plads 8B i Brønderslev. Unik bordgrill-oplevelse med friske råvarer. Sommerkampagne: All You Can Eat for kun 239,-. Book bord nu!",
+      "Oplev autentisk koreansk BBQ og japansk sushi på Peder Nielsens Plads 8B i Brønderslev. All You Can Eat fra 279,-. Book bord nu!",
     url: "https://www.nomirestaurant.dk",
     siteName: "Nomi BBQ & Sushi",
     images: [
@@ -34,18 +34,20 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nomi BBQ & Sushi | Autentisk Koreansk BBQ & Sushi i Brønderslev",
+    title: "Nomi BBQ & Sushi | Koreansk BBQ & Japansk Sushi i Brønderslev",
     description:
-      "Oplev autentisk koreansk BBQ og sushi på Peder Nielsens Plads 8B i Brønderslev. Unik bordgrill-oplevelse med friske råvarer.",
+      "Oplev autentisk koreansk BBQ og japansk sushi på Peder Nielsens Plads 8B i Brønderslev. All You Can Eat fra 279,-.",
     images: ["/images/nyt-20projekt-20-2816-29.png"],
   },
   keywords: [
     "koreansk restaurant Brønderslev",
+    "sushi Brønderslev",
+    "koreansk BBQ Brønderslev",
+    "japansk sushi",
     "BBQ restaurant",
     "bordgrill",
     "all you can eat",
-    "Nomi restaurant",
-    "Sommerkampagne Nomi",
+    "Nomi BBQ og sushi",
   ],
   icons: {
     icon: "/images/nomi-logo-circle.png",

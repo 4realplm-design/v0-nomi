@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useRef } from "react"
 import Image from "next/image"
-import Link from "next/link"
 
 export default function Story() {
   const [isVisible, setIsVisible] = useState(false)
@@ -51,65 +50,31 @@ export default function Story() {
             All You Can Eat Koncept
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed px-4">
-            Nomi BBQ byder på en unik oplevelse, hvor du kan grille din egen Koreanske BBQ direkte ved bordet.
+            Nomi BBQ &amp; Sushi byder på en unik oplevelse, hvor du kan grille din egen Koreanske BBQ ved bordet og nyde frisk japansk sushi.
           </p>
         </div>
 
         <div
           className={`mb-12 sm:mb-24 max-w-4xl mx-auto transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
         >
-          <div className="flex justify-center mb-6 sm:mb-8">
-            <div className="inline-block border border-[#A91D3A]/60 rounded-full px-6 py-2">
-              <p className="text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#A91D3A] uppercase">
-                Sommerkampagne — 5. juli – 9. august
-              </p>
+          <div className="bg-gradient-to-br from-[#A91D3A]/10 via-black to-black border-2 border-[#A91D3A]/30 rounded-3xl p-4 sm:p-8 md:p-12">
+            <div className="text-center mb-6">
+              <p className="text-[#A91D3A] font-bold text-sm uppercase tracking-widest mb-1">All You Can Eat</p>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Priser</h3>
             </div>
-          </div>
-
-          <div className="bg-[#050505] border border-[#A91D3A]/20 rounded-3xl p-6 sm:p-12 md:p-16 shadow-2xl shadow-[#A91D3A]/5">
-            <div className="max-w-3xl">
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-white tracking-tight">
-                All You Can Eat Koreansk BBQ & Sticks
-              </h3>
-
-              <div className="flex items-baseline gap-4 mb-10">
-                <p className="text-6xl sm:text-7xl md:text-8xl text-[#A91D3A] font-bold tracking-tighter">239,-</p>
-                <p className="text-white/40 text-lg sm:text-xl md:text-2xl">pr. person</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-[#A91D3A] col-span-1 sm:col-span-2">
+                <p className="text-white font-semibold text-sm sm:text-base text-center">All you can eat voksen</p>
+                <p className="text-3xl sm:text-4xl text-[#A91D3A] font-bold text-center mt-1">279,-</p>
+                <p className="text-white/60 text-center text-sm mt-1">Weekend: 299,-</p>
               </div>
-
-              <ul className="space-y-4 mb-12">
-                <li className="flex items-start gap-3 text-white/90 text-sm sm:text-base md:text-lg">
-                  <span className="text-[#A91D3A] text-2xl leading-none">•</span>
-                  <span>
-                    Samme pris alle ugens dage — <strong className="text-white font-bold">nyd maden i weekenden helt uden ekstra gebyr</strong>
-                  </span>
-                </li>
-                <li className="flex items-start gap-3 text-white/90 text-sm sm:text-base md:text-lg">
-                  <span className="text-[#A91D3A] text-2xl leading-none">•</span>
-                  <span>Vi serverer ikke sushi i denne periode</span>
-                </li>
-              </ul>
-
-              <div className="h-px bg-white/10 w-full mb-12" />
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
-                <div className="bg-black/40 rounded-2xl p-6 sm:p-8 border border-white/5">
-                  <p className="text-white/60 font-medium mb-3 text-sm sm:text-base">Børn 3–5 år</p>
-                  <p className="text-4xl sm:text-5xl text-[#A91D3A] font-bold">79,-</p>
-                </div>
-                <div className="bg-black/40 rounded-2xl p-6 sm:p-8 border border-white/5">
-                  <p className="text-white/60 font-medium mb-3 text-sm sm:text-base">Børn 6–10 år</p>
-                  <p className="text-4xl sm:text-5xl text-[#A91D3A] font-bold">109,-</p>
-                </div>
+              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
+                <p className="text-white font-semibold text-sm sm:text-base">All you can eat børn 3-5 år</p>
+                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">99,-</p>
               </div>
-
-              <div>
-                <Link
-                  href="/booking"
-                  className="inline-block px-10 py-4 bg-[#A91D3A] hover:bg-[#C82446] text-white rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105"
-                >
-                  Book dit bord i dag
-                </Link>
+              <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
+                <p className="text-white font-semibold text-sm sm:text-base">All you can eat børn 6-10</p>
+                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">139,-</p>
               </div>
             </div>
           </div>
@@ -137,7 +102,9 @@ export default function Story() {
             <div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-white">Vores Koncept</h3>
               <p className="text-white/70 leading-relaxed text-sm sm:text-base">
-                Hos Nomi BBQ tilbyder vi et All You Can Eat-koncept, der giver mulighed for at smage bredt og dele en hyggelig spiseoplevelse med familie, venner og kolleger. Vi lægger stor vægt på kvalitet, friskhed og autentiske smagsoplevelser — fra vores udvalgte kødudskæringer til vores mange lækre sticks.
+                Hos Nomi BBQ &amp; Sushi tilbyder vi et All You Can Eat-koncept, der giver mulighed for at smage bredt og
+                dele en hyggelig spiseoplevelse med familie, venner og kolleger. Vi lægger stor vægt på kvalitet,
+                friskhed og autentiske smagsoplevelser — fra udvalgte kødudskæringer og lækre sticks til frisk japansk sushi.
               </p>
             </div>
 
@@ -154,7 +121,15 @@ export default function Story() {
                 <li className="flex items-start">
                   <span className="text-[#A91D3A] mr-2 sm:mr-3 mt-1">▸</span>
                   <span>
-                    <strong className="text-white">Tilbehør og småretter:</strong> Populære koreanske og japanske retter, som fuldender måltidet.
+                    <strong className="text-white">Frisk sushi:</strong> Tilberedt dagligt af vores kokke — nigiri,
+                    sashimi, maki og specialruller.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#A91D3A] mr-2 sm:mr-3 mt-1">▸</span>
+                  <span>
+                    <strong className="text-white">Tilbehør og småretter:</strong> Populære koreanske og japanske
+                    retter, som fuldender måltidet.
                   </span>
                 </li>
                 <li className="flex items-start">

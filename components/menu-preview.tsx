@@ -27,8 +27,8 @@ export default function MenuPreview() {
       items: ["Bulgogi Bøf", "Galbi Ribben", "Samgyeopsal Bacon"],
     },
     {
-      category: "Sushi Specialiteter",
-      items: ["Dragon Roll", "Spicy Tuna Roll", "Premium Nigiri Set"],
+      category: "Sticks Specialiteter",
+      items: ["Chicken Satay", "Beef Sticks", "Prawn Sticks"],
     },
     {
       category: "Beilag & Saucer",

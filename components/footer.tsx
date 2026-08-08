@@ -5,6 +5,7 @@ import { useState } from "react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const currentMonth = new Date().toLocaleString("da-DK", { month: "long" }).toUpperCase()
   const [isFlipped, setIsFlipped] = useState(false)
 
   const handleLogoClick = () => {
@@ -77,7 +78,7 @@ export default function Footer() {
           {/* Mobile: Description under logo */}
           <div className="md:hidden mb-8">
             <p className="text-sm text-white/60">
-              Autentisk koreansk BBQ & Sushi i hjertet af Brønderslev{" "}
+              Autentisk koreansk BBQ &amp; sushi i hjertet af Brønderslev{" "}
             </p>
           </div>
 
@@ -124,7 +125,7 @@ export default function Footer() {
                 </div>
               </button>
               <p className="text-sm text-white/60">
-                Autentisk koreansk BBQ & Sushi i hjertet af Brønderslev{" "}
+                Autentisk koreansk BBQ &amp; sushi i hjertet af Brønderslev{" "}
               </p>
             </div>
 
@@ -189,7 +190,7 @@ export default function Footer() {
 
               <div className="mt-6">
                 <h3 className="text-base font-semibold text-white mb-1">
-                  ÅBNINGSTIDER <span className="text-[#A91D3A]">JULI</span>
+                  ÅBNINGSTIDER <span className="text-[#A91D3A]">{currentMonth}</span>
                 </h3>
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between text-white/80">
@@ -353,7 +354,7 @@ export default function Footer() {
 
               <div className="mt-6">
                 <h3 className="text-base font-semibold text-white mb-1">
-                  ÅBNINGSTIDER <span className="text-[#A91D3A]">JULI</span>
+                  ÅBNINGSTIDER <span className="text-[#A91D3A]">{currentMonth}</span>
                 </h3>
                 <div className="space-y-1 text-sm">
                   <div className="flex justify-between text-white/80">
@@ -442,7 +443,7 @@ export default function Footer() {
         <div className="border-t border-white/10 my-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
-          <p>&copy; 2026 Nomi B.B.Q. Alle rettigheder forbeholdt.</p>
+          <p>&copy; {currentYear} Nomi BBQ &amp; Sushi. Alle rettigheder forbeholdt.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <button
               onClick={() => {

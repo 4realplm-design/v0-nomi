@@ -35,7 +35,7 @@ export default function Hero() {
           </div>
 
           <p className="text-xl sm:text-2xl text-white/80 text-balance max-w-3xl mx-auto leading-relaxed">
-            {"En kulinarisk oplevelse venter"}
+            Koreansk BBQ &amp; Japansk Sushi &mdash; All You Can Eat
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 mx-auto max-w-fit">
