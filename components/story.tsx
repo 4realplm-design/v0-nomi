@@ -70,7 +70,7 @@ export default function Story() {
               </div>
               <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
                 <p className="text-white font-semibold text-sm sm:text-base">All you can eat børn 3-5 år</p>
-                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">99,-</p>
+                <p className="text-xl sm:text-2xl text-[#A91D3A] font-bold">79,-</p>
               </div>
               <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
                 <p className="text-white font-semibold text-sm sm:text-base">All you can eat børn 6-10</p>
