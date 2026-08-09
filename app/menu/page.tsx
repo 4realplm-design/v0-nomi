@@ -53,13 +53,82 @@ export default function MenuPage() {
             { number: "21", name: "Tun Sashimi", description: "3 skiver" },
           ],
         },
-        toppet: {
-          name: "Toppet",
-          description: "Sushi med topping",
+        kaburimaki: {
+          name: "Kaburimaki",
+          description: "Toppede ruller, 8 stk pr. ret",
           items: [
-            { number: "29", name: "Grillet Laks Deluxe Roll" },
-            { number: "30", name: "Laks Deluxe Roll" },
-            { number: "32", name: "Rainbow Roll" },
+            {
+              number: "23",
+              name: "Tun Kaburimaki",
+              description: "8 stk Tempura Rejer Tun Roll",
+              price: "125 kr.",
+            },
+            {
+              number: "24",
+              name: "Grillet Laks Kaburimaki",
+              description: "8 stk Tempura rejer, avocado og mango, toppet med grillet laks og spicy mayo",
+              price: "125 kr.",
+            },
+            {
+              number: "25",
+              name: "Avocado Kaburimaki",
+              description: "8 stk Laksemousse og tobiko, toppet med forårsløg og avocado",
+              price: "120 kr.",
+            },
+            {
+              number: "26",
+              name: "Rainbow Kaburimaki",
+              description: "8 stk Tempura rejer, avocado og agurk, toppet med laks, tun, rejer, hvidfisk og bønnespirer",
+              price: "120 kr.",
+            },
+            {
+              number: "27",
+              name: "Kylling Kaburimaki",
+              description: "8 stk Tempura kylling og agurk, toppet med avocado og spicy mayo",
+              price: "110 kr.",
+            },
+            {
+              number: "28",
+              name: "Vegetar Kaburimaki",
+              description: "8 stk Salat mix, tofu, agurk og avocado, toppet med tangsalat og chili sesamfrø",
+              price: "105 kr.",
+            },
+            {
+              number: "29",
+              name: "Grillet Laks Kaburimaki",
+              description: "8 stk Laks, avocado og agurk, toppet med grillet laks og forårsløg",
+              price: "115 kr.",
+            },
+            {
+              number: "30",
+              name: "Laks Kaburimaki",
+              description: "8 stk Laks, avocado og agurk, toppet med laks og forårsløg",
+              price: "115 kr.",
+            },
+            {
+              number: "31",
+              name: "Laks Avocado Kaburimaki",
+              description: "8 stk Laksemousse og tobiko, toppet med forårsløg og avocado",
+              price: "110 kr.",
+            },
+            {
+              number: "32",
+              name: "Rainbow Surimi Kaburimaki",
+              description: "8 stk Surimi, avocado og agurk, toppet med laks, rejer og hvidfisk",
+              price: "110 kr.",
+            },
+            {
+              number: "33",
+              name: "Tun Avocado Kaburimaki",
+              description: "8 stk Tun og tobiko, toppet med tun og forårsløg",
+              price: "110 kr.",
+            },
+            {
+              number: "34",
+              name: "Tempura Surimi Kaburimaki",
+              description: "8 stk Tempura surimi, avocado og agurk, toppet med bønnespirer",
+              price: "110 kr.",
+            },
           ],
         },
         uramaki: {
@@ -247,9 +316,12 @@ export default function MenuPage() {
         )}
         <span className="text-[#A91D3A] font-bold text-lg shrink-0 w-12 z-10">{item.number}</span>
         <div className="flex-1 z-10">
-          <div className="flex items-center gap-2">
-            <h3 className="text-white font-medium">{item.name}</h3>
-            {isFavorite && <Heart className="w-4 h-4 fill-[#A91D3A] text-[#A91D3A]" />}
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex items-center gap-2">
+              <h3 className="text-white font-medium">{item.name}</h3>
+              {isFavorite && <Heart className="w-4 h-4 fill-[#A91D3A] text-[#A91D3A]" />}
+            </div>
+            {item.price && <span className="text-[#A91D3A] font-semibold text-sm shrink-0">{item.price}</span>}
           </div>
           {item.description && <p className="text-white/40 text-sm mt-0.5">{item.description}</p>}
           <p className="text-[#A91D3A]/60 text-xs mt-2">← Træk/Swipe højre for at gemme</p>
@@ -313,7 +385,10 @@ export default function MenuPage() {
                   >
                     <span className="text-[#A91D3A] font-bold text-lg shrink-0 w-12">{item.number}</span>
                     <div className="flex-1">
-                      <h3 className="text-white font-medium">{item.name}</h3>
+                      <div className="flex items-center justify-between gap-2">
+                        <h3 className="text-white font-medium">{item.name}</h3>
+                        {item.price && <span className="text-[#A91D3A] font-semibold text-sm shrink-0">{item.price}</span>}
+                      </div>
                       {item.description && <p className="text-white/40 text-sm mt-0.5">{item.description}</p>}
                     </div>
                     <button
