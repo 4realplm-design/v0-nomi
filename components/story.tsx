@@ -65,8 +65,8 @@ export default function Story() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-[#A91D3A] col-span-1 sm:col-span-2">
                 <p className="text-white font-semibold text-sm sm:text-base text-center">All you can eat voksen</p>
-                <p className="text-3xl sm:text-4xl text-[#A91D3A] font-bold text-center mt-1">279,-</p>
-                <p className="text-white/60 text-center text-sm mt-1">Weekend: 299,-</p>
+                <p className="text-3xl sm:text-4xl text-[#A91D3A] font-bold text-center mt-1">269,-</p>
+                <p className="text-white/60 text-center text-sm mt-1">Fredag – søndag: 289,-</p>
               </div>
               <div className="bg-black/40 rounded-lg p-3 sm:p-4 border border-white/10">
                 <p className="text-white font-semibold text-sm sm:text-base">All you can eat børn 3-5 år</p>

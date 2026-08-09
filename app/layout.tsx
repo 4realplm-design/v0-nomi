@@ -14,11 +14,11 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Nomi BBQ & Sushi | Koreansk BBQ & Japansk Sushi i Brønderslev",
   description:
-    "Oplev autentisk koreansk BBQ og japansk sushi på Peder Nielsens Plads 8B i Brønderslev. All You Can Eat fra 279,-. Book bord nu!",
+    "Oplev autentisk koreansk BBQ og japansk sushi på Peder Nielsens Plads 8B i Brønderslev. All You Can Eat fra 269,-. Book bord nu!",
   openGraph: {
     title: "Nomi BBQ & Sushi | Koreansk BBQ & Japansk Sushi i Brønderslev",
     description:
-      "Oplev autentisk koreansk BBQ og japansk sushi på Peder Nielsens Plads 8B i Brønderslev. All You Can Eat fra 279,-. Book bord nu!",
+      "Oplev autentisk koreansk BBQ og japansk sushi på Peder Nielsens Plads 8B i Brønderslev. All You Can Eat fra 269,-. Book bord nu!",
     url: "https://www.nomirestaurant.dk",
     siteName: "Nomi BBQ & Sushi",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nomi BBQ & Sushi | Koreansk BBQ & Japansk Sushi i Brønderslev",
     description:
-      "Oplev autentisk koreansk BBQ og japansk sushi på Peder Nielsens Plads 8B i Brønderslev. All You Can Eat fra 279,-.",
+      "Oplev autentisk koreansk BBQ og japansk sushi på Peder Nielsens Plads 8B i Brønderslev. All You Can Eat fra 269,-.",
     images: ["/images/nyt-20projekt-20-2816-29.png"],
   },
   keywords: [
