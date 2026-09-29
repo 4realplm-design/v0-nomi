@@ -1,10 +1,36 @@
 "use client"
 
-import Image from "next/image"
 import { useEffect, useState } from "react"
+
+const pannaCottaFlavors = [
+  {
+    name: "Jordbær",
+    description: "Silkeblød panna cotta med frisk jordbærglaze og sprøde frysetørrede hindbær.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8031-removebg-preview-ZqjJ2brug2upNUVBFVbKQiorm7nJuS.png",
+    panel: "#b51f2d",
+    accent: "#ffd5d3",
+  },
+  {
+    name: "Chokolade",
+    description: "Fyldig chokoladeglaze med sprøde kakaonibs og en intens, blank finish.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8032-removebg-preview-NyhAZnEVvBSI4oP3Kax2MrqriKq7lP.png",
+    panel: "#321d1a",
+    accent: "#e9c39d",
+  },
+  {
+    name: "Lakrids",
+    description: "Mørk lakrids- og chokoladeglaze med kakaonibs og gyldne crumble-stykker.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8033-removebg-preview-QmHeNHtIkumK1cleElq5ryrpOX6URw.png",
+    panel: "#171519",
+    accent: "#efb867",
+  },
+] as const
 
 export default function MenuPreview() {
   const [isVisible, setIsVisible] = useState(false)
+  const [activeFlavor, setActiveFlavor] = useState(0)
+  const [touchStart, setTouchStart] = useState<number | null>(null)
+  const flavor = pannaCottaFlavors[activeFlavor]
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,25 +71,51 @@ export default function MenuPreview() {
           </div>
         </div>
 
-        <div className="grid gap-5 lg:grid-cols-[1.35fr_0.65fr]">
-          <article className="group relative overflow-hidden rounded-[2rem] border border-[#A91D3A]/50 bg-gradient-to-br from-[#531323] via-[#18090e] to-[#080808] p-7 shadow-2xl shadow-[#A91D3A]/10 sm:p-10">
-            <div className="absolute right-8 top-8 rounded-full border border-[#d8a65b]/40 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#d8a65b]">Nyhed</div>
-            <div className="relative flex min-h-[270px] flex-col justify-end">
-              <Image
-                src="/images/panna-cotta-feature.png"
-                alt="Panna Cotta dessert feature"
-                width={224}
-                height={224}
-                className="mb-auto h-28 w-28 rounded-full object-cover shadow-[0_0_60px_rgba(216,166,91,0.12)] transition-transform duration-500 group-hover:scale-105"
-              />
-              <div>
-                <p className="mb-2 text-sm font-semibold uppercase tracking-[0.22em] text-[#d8a65b]">Dessert</p>
-                <h3 className="text-4xl font-bold text-white sm:text-5xl">Panna Cotta</h3>
-                <p className="mt-3 max-w-lg text-white/65">Cremet vanilje, frisk frugt og en elegant afslutning på din aften hos os.</p>
-              </div>
+        <div
+          className="relative overflow-hidden rounded-[2rem] transition-colors duration-700"
+          style={{ backgroundColor: flavor.panel }}
+          onTouchStart={(event) => setTouchStart(event.touches[0]?.clientX ?? null)}
+          onTouchEnd={(event) => {
+            if (touchStart === null) return
+            const distance = event.changedTouches[0]?.clientX - touchStart
+            if (Math.abs(distance) > 45) {
+              setActiveFlavor((current) => (distance < 0 ? (current + 1) % pannaCottaFlavors.length : (current - 1 + pannaCottaFlavors.length) % pannaCottaFlavors.length))
+            }
+            setTouchStart(null)
+          }}
+        >
+          <div className="relative flex min-h-[540px] flex-col items-center justify-between px-6 py-8 text-center sm:min-h-[620px] sm:px-10 sm:py-12">
+            <div className="flex w-full items-center justify-between text-left">
+              <p className="text-xs font-bold uppercase tracking-[0.28em]" style={{ color: flavor.accent }}>Nyhed</p>
+              <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/60">{activeFlavor + 1} / {pannaCottaFlavors.length}</p>
             </div>
-          </article>
-
+            <div className="flex flex-1 items-center justify-center py-5">
+              <img
+                key={flavor.image}
+                src={flavor.image}
+                alt={`Panna Cotta med ${flavor.name.toLowerCase()}`}
+                className="h-auto w-[min(82vw,34rem)] select-none object-contain drop-shadow-[0_24px_18px_rgba(0,0,0,0.3)] transition-all duration-700 motion-safe:animate-[fade-in_700ms_ease-out]"
+                draggable="false"
+              />
+            </div>
+            <div className="max-w-xl">
+              <h3 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Panna Cotta</h3>
+              <p className="mt-3 text-sm leading-relaxed text-white/75 sm:text-base">{flavor.name} · {flavor.description}</p>
+            </div>
+            <div className="mt-7 flex items-center gap-2" aria-label="Vælg panna cotta-smag">
+              {pannaCottaFlavors.map((item, index) => (
+                <button
+                  key={item.name}
+                  type="button"
+                  onClick={() => setActiveFlavor(index)}
+                  aria-label={`Vis ${item.name} panna cotta`}
+                  aria-current={index === activeFlavor ? "true" : undefined}
+                  className={`h-2 rounded-full transition-all duration-500 ${index === activeFlavor ? "w-10" : "w-2 bg-white/45 hover:bg-white/75"}`}
+                  style={index === activeFlavor ? { backgroundColor: flavor.accent } : undefined}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
