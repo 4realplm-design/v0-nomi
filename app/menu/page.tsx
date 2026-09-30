@@ -9,7 +9,7 @@ export default function MenuPage() {
   const [favorites, setFavorites] = useState<string[]>([])
   const [swipedItems, setSwipedItems] = useState<Set<string>>(new Set())
   const [showFavorites, setShowFavorites] = useState(false)
-  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set(["nigiri"]))
+  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set(["nigiri", "desserts"]))
 
   useEffect(() => {
     const saved = localStorage.getItem("nomi-favorites")
@@ -183,6 +183,33 @@ export default function MenuPage() {
         },
       },
     },
+    desserts: {
+      title: "Desserter",
+      subtitle: "En sød afslutning på din Nomi-oplevelse",
+      categories: {
+        desserts: {
+          name: "Panna Cotta",
+          description: "Nyhed · Silkeblød panna cotta med tre forskellige toppings",
+          items: [
+            {
+              number: "D1",
+              name: "Jordbær Panna Cotta",
+              description: "Silkeblød panna cotta med frisk jordbærglaze og sprøde frysetørrede hindbær",
+            },
+            {
+              number: "D2",
+              name: "Lakrids Panna Cotta",
+              description: "Intens lakridsglaze med sprøde kakaonibs og en dyb, blank finish",
+            },
+            {
+              number: "D3",
+              name: "Chokolade Panna Cotta",
+              description: "Fyldig chokoladeglaze med kakaonibs og gyldne crumble-stykker på toppen",
+            },
+          ],
+        },
+      },
+    },
     korean: {
       title: "Koreanske Specialiteter",
       subtitle: "Autentiske koreanske retter",
@@ -346,6 +373,10 @@ export default function MenuPage() {
 
       <div className="pt-32 pb-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-[#d8a65b]/40 bg-[#A91D3A]/15 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#d8a65b]">
+            <span className="h-2 w-2 rounded-full bg-[#d8a65b] shadow-[0_0_12px_#d8a65b]" aria-hidden="true" />
+            Nyhed: Panna Cotta
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-3">All You Can Eat Menu</h1>
           <p className="text-lg text-white/60 mb-2">Ubegrænset adgang til alle retter</p>
           <p className="text-sm text-white/40">Max 2 timer per reservation</p>
