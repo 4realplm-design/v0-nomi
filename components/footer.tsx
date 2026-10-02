@@ -219,7 +219,7 @@ export default function Footer() {
                   </div>
                   <div className="flex justify-between text-white/80">
                     <span>Søndag</span>
-                    <span>16:00 - 21:00</span>
+                    <span>12:00 - 21:00</span>
                   </div>
                 </div>
               </div>
@@ -383,7 +383,7 @@ export default function Footer() {
                   </div>
                   <div className="flex justify-between text-white/80">
                     <span>Søndag</span>
-                    <span>16:00 - 21:00</span>
+                    <span>12:00 - 21:00</span>
                   </div>
                 </div>
               </div>
