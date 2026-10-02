@@ -41,7 +41,7 @@ export default function Story() {
   }, [])
 
   return (
-    <section id="story-section" className="pt-48 pb-48 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
+    <section id="story-section" className="pt-[70px] pb-48 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
       <div className="max-w-7xl mx-auto">
         <div
           className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
