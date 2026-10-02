@@ -86,7 +86,7 @@ export default function ContactPage() {
               </div>
               <div className="flex justify-between">
                 <span className="text-white/70">Søndag</span>
-                <span className="font-semibold text-white">16:00 - 21:00</span>
+                <span className="font-semibold text-white">12:00 - 21:00</span>
               </div>
             </div>
           </div>

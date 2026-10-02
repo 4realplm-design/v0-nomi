@@ -1,6 +1,5 @@
 import Navigation from "@/components/navigation"
 import Hero from "@/components/hero"
-import HolidayHours from "@/components/holiday-hours"
 import Story from "@/components/story"
 import MenuPreview from "@/components/menu-preview"
 import BookingCTA from "@/components/booking-cta"
@@ -12,7 +11,6 @@ export default function Home() {
     <main className="bg-background text-foreground">
       <Navigation />
       <Hero />
-      <HolidayHours />
       <Story />
       <MenuPreview />
       <BookingCTA />
