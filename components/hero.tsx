@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen pt-20 overflow-hidden flex items-center justify-center bg-black">
+    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-black py-20">
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <div className="absolute inset-0 w-full h-full opacity-40 flex items-center justify-center">
           <iframe
@@ -38,24 +38,26 @@ export default function Hero() {
             Koreansk BBQ &amp; Japansk Sushi &mdash; All You Can Eat
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 mx-auto max-w-fit">
-            <Link
-              href="/booking"
-              className="px-10 py-4 bg-[#A91D3A] hover:bg-[#8B1730] text-white text-lg rounded-lg font-semibold transition-all duration-300 hover:shadow-2xl hover:shadow-[#A91D3A]/50 hover:scale-105 w-full sm:w-auto"
-            >
-              Reserver Bord Nu
-            </Link>
-            <Link
-              href="https://takeaway.any2order.com/b/takeaway/NomiB.B.Q&Sushi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-10 py-4 bg-black/50 border-2 border-white/50 hover:border-[#A91D3A] text-white text-lg rounded-lg font-semibold transition-all duration-300 hover:bg-[#A91D3A]/20 hover:scale-105 w-full sm:w-auto"
-            >
-              Takeaway
-            </Link>
+          <div className="flex w-full max-w-2xl flex-col items-center justify-center gap-4 pt-4 mx-auto">
+            <div className="flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
+              <Link
+                href="/booking"
+                className="px-10 py-4 bg-[#A91D3A] hover:bg-[#8B1730] text-white text-lg rounded-lg font-semibold transition-all duration-300 hover:shadow-2xl hover:shadow-[#A91D3A]/50 hover:scale-105 w-full sm:w-auto"
+              >
+                Reserver Bord Nu
+              </Link>
+              <Link
+                href="https://takeaway.any2order.com/b/takeaway/NomiB.B.Q&Sushi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-10 py-4 bg-black/50 border-2 border-white/50 hover:border-[#A91D3A] text-white text-lg rounded-lg font-semibold transition-all duration-300 hover:bg-[#A91D3A]/20 hover:scale-105 w-full sm:w-auto"
+              >
+                Takeaway
+              </Link>
+            </div>
             <Link
               href="/menu"
-              className="relative z-30 inline-flex min-h-12 w-full items-center justify-center whitespace-nowrap rounded-[15px] border-2 border-[#d8a65b] bg-[#16090d] px-6 py-[13px] text-lg font-semibold text-white shadow-[0_8px_30px_rgba(0,0,0,0.65)] transition-all duration-300 hover:scale-105 hover:border-[#A91D3A] hover:bg-[#A91D3A] sm:w-auto sm:px-10"
+              className="relative z-30 inline-flex min-h-12 w-full items-center justify-center whitespace-nowrap rounded-[15px] border-2 border-[#d8a65b] bg-[#16090d] px-6 py-[13px] text-lg font-semibold text-white shadow-[0_8px_30px_rgba(0,0,0,0.65)] transition-all duration-300 hover:scale-105 hover:border-[#A91D3A] hover:bg-[#A91D3A] sm:px-10"
             >
               Se Vores Menu
             </Link>
