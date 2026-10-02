@@ -53,12 +53,9 @@ export default function Hero() {
             >
               Takeaway
             </Link>
-          </div>
-
-          <div className="relative z-30 flex justify-center pt-2">
             <Link
               href="/menu"
-              className="relative z-30 inline-flex min-h-12 w-full items-center justify-center whitespace-nowrap rounded-lg border-2 border-[#d8a65b] bg-[#16090d] px-6 py-2.5 text-lg font-semibold text-white shadow-[0_8px_30px_rgba(0,0,0,0.65)] transition-all duration-300 hover:scale-105 hover:border-[#A91D3A] hover:bg-[#A91D3A] sm:w-auto sm:px-10"
+              className="relative z-30 inline-flex min-h-12 w-full items-center justify-center whitespace-nowrap rounded-[15px] border-2 border-[#d8a65b] bg-[#16090d] px-6 py-[13px] text-lg font-semibold text-white shadow-[0_8px_30px_rgba(0,0,0,0.65)] transition-all duration-300 hover:scale-105 hover:border-[#A91D3A] hover:bg-[#A91D3A] sm:w-auto sm:px-10"
             >
               Se Vores Menu
             </Link>
